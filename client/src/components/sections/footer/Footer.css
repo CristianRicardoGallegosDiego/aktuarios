@@ -1,0 +1,12 @@
+.footer-container {
+    font-family: var(--lato);
+    color: var(--white-1);
+}
+
+.first-footer-container {
+    background-color: var(--blue-2);
+}
+
+.second-footer-container {
+    background-color: var(--blue-1)
+}
