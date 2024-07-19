@@ -8,6 +8,7 @@ import {
 import Footer from "./components/sections/footer/Footer";
 import Home from "./pages/home/Home";
 import NotFound from "./pages/not-found/NotFound";
+import "./assets/fontawesome.js";
 import "./assets/styles/reset.css";
 import "./assets/styles/App.css";
 

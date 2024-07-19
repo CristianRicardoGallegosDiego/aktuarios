@@ -1,0 +1,73 @@
+{
+    "social_media": [
+        {
+            "icon": "fa-brands fa-linkedin",
+            "title": "LinkedIn",
+            "url": "https://www.linkedin.com/"
+        },
+        {
+            "icon": "fa-brands fa-square-facebook",
+            "title": "Facebook",
+            "url": "https://www.facebook.com/"
+        }, 
+        {
+            "icon": "fa-brands fa-square-x-twitter",
+            "title": "X",
+            "url": "https://www.x.com/"
+        },
+        {
+            "icon": "fa-brands fa-square-instagram",
+            "title": "Instagram",
+            "url": "https://www.instagram.com/"
+        }
+    ],
+    "general_information": [
+        {
+            "title": "Política de privacidad",
+            "url": "/politica-de-privacidad"
+        }, 
+        {
+            "title": "Términos de uso",
+            "url": "/terminos-de-uso"
+        }
+    ],
+    "contact_us": {
+        "mails_and_mobiles_container": {
+            "mail_icon": "fa-solid fa-envelope",
+            "mobile_icon": "fa-brands fa-whatsapp",
+            "mails_and_mobiles": [
+                {
+                    "mail": "josecarlos@aktuarios.com",
+                    "mail_url": "https://mail.google.com/mail/?view=cm&fs=1&to=josecarlos@aktuarios.com",
+                    "mobile": "55 4369 6256",
+                    "mobile_url": "https://wa.me/5543696256"
+                },
+                {
+                    "mail": "monica@aktuarios.com",
+                    "mail_url": "https://mail.google.com/mail/?view=cm&fs=1&to=monica@aktuarios.com",
+                    "mobile": "55 2335 4696",
+                    "mobile_url": "https://wa.me/5523354696"
+                },
+                {
+                    "mail": "javier@aktuarios.com",
+                    "mail_url": "https://mail.google.com/mail/?view=cm&fs=1&to=javier@aktuarios.com",
+                    "mobile": "55 6456 5115",
+                    "mobile_url": "https://wa.me/5564565115"
+                }
+            ]
+        },
+        "phones_container": {
+            "icon": "fa-solid fa-phone",
+            "phones": [
+                {
+                    "phone": "55 6812 5783",
+                    "phone_url": "tel:5568125783"
+                },
+                {
+                    "phone": "55 92914643",
+                    "phone_url": "tel:5592914643"
+                }
+            ]
+        }
+    }
+}

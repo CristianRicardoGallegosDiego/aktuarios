@@ -1,34 +1,25 @@
-import library from '@fortawesome/fontawesome-svg-core';
+import { library } from "@fortawesome/fontawesome-svg-core";
 import {
     faEnvelope,
-    faCreditCard,
-    faPlus,
-    faMinus,
-    faArrowRight
+    faPhone
 } from "@fortawesome/free-solid-svg-icons";
 import {
     faSquareFacebook,
+    faLinkedin,
+    faSquareXTwitter,
     faSquareInstagram,
-    faSquareWhatsapp,
-    faCcVisa,
-    faCcMastercard,
-    faCcAmex
+    faWhatsapp
 } from "@fortawesome/free-brands-svg-icons";
-import {
+/**import {
     faMoneyBill1
-} from "@fortawesome/free-regular-svg-icons"
+} from "@fortawesome/free-regular-svg-icons"*/
 
 library.add(
-    faSquareFacebook,
-    faSquareInstagram,
-    faSquareWhatsapp,
     faEnvelope,
-    faMoneyBill1,
-    faCreditCard,
-    faCcVisa,
-    faCcMastercard,
-    faCcAmex,
-    faPlus,
-    faMinus,
-    faArrowRight
+    faPhone,
+    faSquareFacebook,
+    faLinkedin,
+    faSquareXTwitter,
+    faSquareInstagram,
+    faWhatsapp
 );
