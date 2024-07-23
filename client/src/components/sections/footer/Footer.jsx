@@ -61,7 +61,7 @@ const FirstFooter = () => {
                 </div>
                 <div className="contact-us-container">
                     <h2>Contacto</h2>
-                    <div>
+                    <div className="info">
                         <div className="mails-and-mobiles-container">
                             <h3>Correos y Télefonos Celulares:</h3>
                             <ul>
@@ -73,6 +73,7 @@ const FirstFooter = () => {
                                                     <FontAwesomeIcon icon={mail_icon} alt="Correo"/>
                                                     <a href={item.mail_url} target="_blank" rel="noreferrer">{item.mail}</a>
                                                 </div>
+                                                <p>-</p>
                                                 <div>
                                                     <FontAwesomeIcon icon={mobile_icon} alt="Celular"/>
                                                     <a href={item.mobile_url} target="_blank" rel="noreferrer">{item.mobile}</a>
@@ -100,6 +101,20 @@ const FirstFooter = () => {
                         </div>
                     </div>
                 </div>
+                <div className="location-container">
+                    <h2>Ubicación</h2>
+                    <p>
+                        <FontAwesomeIcon icon= "fa-solid fa-map-location-dot" alt=""/>
+                        Real de Los Reyes #303, Los Reyes, Alc. Coyoacán, Ciudad de México, C.P. 04330, México.
+                    </p>
+                    <iframe
+                        title="Mapa de Ubicación"
+                        loading="lazy"
+                        referrerPolicy="no-referrer"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3764.727999171979!2d-99.1502399!3d19.3376058!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0029f9da7505%3A0x23b2d1cdacd123b8!2sReal%20de%20Los%20Reyes%20303%2C%20Los%20Reyes%2C%20Coyoac%C3%A1n%2C%2004330%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1718144001766!5m2!1ses!2smx"
+                    >
+                    </iframe>
+                </div>
             </div>
         </div>
     );
@@ -109,7 +124,7 @@ const SecondFooter = () => {
     return (
         <div className="second-footer-container">
             <div>
-                <h3>Copyright © 2024 Aktuarios Desarrollo Actuarial S. C. de México |</h3>
+                <h3>Copyright © 2024 Aktuarios Desarrollo Actuarial S. C. de México</h3>
             </div>
             <div>
                 <Link to="/">
@@ -117,7 +132,7 @@ const SecondFooter = () => {
                 </Link>
             </div>
             <div>
-                <h3>| Todos los derechos reservados</h3>
+                <h3>Todos los derechos reservados</h3>
             </div>
         </div>
     );

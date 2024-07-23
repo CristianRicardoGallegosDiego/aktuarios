@@ -1,7 +1,8 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
     faEnvelope,
-    faPhone
+    faPhone,
+    faMapLocationDot
 } from "@fortawesome/free-solid-svg-icons";
 import {
     faSquareFacebook,
@@ -21,5 +22,6 @@ library.add(
     faLinkedin,
     faSquareXTwitter,
     faSquareInstagram,
-    faWhatsapp
+    faWhatsapp,
+    faMapLocationDot
 );
