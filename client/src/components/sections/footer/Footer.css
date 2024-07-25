@@ -187,6 +187,10 @@
     transition: all 0.5s ease-in-out;
 }
 
+.second-footer-container > div:nth-child(2):hover {
+    background-color: var(--gray-1);
+}
+
 .second-footer-container > div:nth-child(2) a {
     display: flex;
     justify-content: center;
