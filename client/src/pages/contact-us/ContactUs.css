@@ -1,9 +1,17 @@
 .contact-us-page-container {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: var(--white-2);
     padding: 5vh 0;
+    box-sizing: border-box;
+    gap: 0 10px;
+}
+
+.contact-us-page-container .contact-us-globe-container {
+    display: flex;
+    justify-content: center;
+    width: 40%;
 }
 
 .contact-us-form-container {
@@ -12,8 +20,8 @@
     background-color: var(--white-1);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
-    padding: 3vh 5%;
-    width: 50%;
+    padding: 3vh 3%;
+    width: 40%;
     transition: all 0.3s ease-in-out;
 }
 
@@ -61,4 +69,15 @@
 
 .contact-us-form-container .form-container button img {
     max-width: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-us-page-container .contact-us-globe-container {
+        display: none;
+    }
+
+    .contact-us-form-container {
+        width: 90%;
+        padding: 3vh 5%;
+    }
 }

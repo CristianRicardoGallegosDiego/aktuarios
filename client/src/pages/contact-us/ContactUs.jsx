@@ -8,6 +8,7 @@ import SubjectIcon from '@mui/icons-material/Subject';
 import MessageIcon from '@mui/icons-material/Message';
 import TextField from "@mui/material/TextField";
 import Box from '@mui/material/Box';
+import GlobeView from "../../components/ui/globe/GlobeView";
 import StaticTruck from "../../assets/images/Truck.svg";
 import DynamicTruck from "../../assets/images/Truck.gif";
 import "./ContactUs.css";
@@ -16,6 +17,7 @@ const ContactUsForm = () => {
     const [fullName, setFullName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
+    const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
 
     return (
@@ -91,6 +93,9 @@ const ContactUsForm = () => {
 const ContactUs = () => {
     return (
         <section className="contact-us-page-container">
+            <div className="contact-us-globe-container">
+                <GlobeView />
+            </div>
             <ContactUsForm />
         </section>
     );
