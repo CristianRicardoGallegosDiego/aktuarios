@@ -1,24 +1,36 @@
 import React, {
     useState
 } from "react";
-import PersonIcon from '@mui/icons-material/Person';
-import ContactMailIcon from '@mui/icons-material/ContactMail';
-import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
-import SubjectIcon from '@mui/icons-material/Subject';
-import MessageIcon from '@mui/icons-material/Message';
-import TextField from "@mui/material/TextField";
-import Box from '@mui/material/Box';
 import GlobeView from "../../components/ui/globe/GlobeView";
 import StaticTruck from "../../assets/images/Truck.svg";
-import DynamicTruck from "../../assets/images/Truck.gif";
+//import DynamicTruck from "../../assets/images/Truck.gif";
 import "./ContactUs.css";
 
+
+import { Input } from "@nextui-org/react";
+import { Textarea } from "@nextui-org/react";
+import {
+    Modal, 
+    ModalContent, 
+    ModalHeader, 
+    ModalBody, 
+    ModalFooter,
+} from "@nextui-org/modal";
+import { Button } from "@nextui-org/react";
+
 const ContactUsForm = () => {
-    const [fullName, setFullName] = useState("");
+    /**const [fullName, setFullName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [subject, setSubject] = useState("");
-    const [message, setMessage] = useState("");
+    const [message, setMessage] = useState("");*/
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleOpen = (e) => {
+        e.preventDefault();
+        setIsOpen(true);
+    };
 
     return (
         <section className="contact-us-form-container">
@@ -29,63 +41,96 @@ const ContactUsForm = () => {
                 el mejor apoyo a su equipo.
             </p>
             <form className="form-container">
-                <Box sx={{ display: 'flex', alignItems: 'center', width: '100%' }}>
-                    <PersonIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
-                    <TextField 
-                        id="name" 
-                        label="Nombre Completo" 
-                        variant="standard"
-                        helperText="Ingrese su nombre completo."
-                        fullWidth
+                <Input 
+                    id="name"
+                    type="text"
+                    label="Nombre Completo"
+                    description="Ingrese su nombre completo."
+                    errorMessage="¿Así se escribe? Inténtalo otra vez."
+                    isClearable
+                    variant="bordered"
+                    size="md"
+                    color="primary"
+                />
+                <div className="email-and-phone">
+                    <Input 
+                        id="email"
+                        type="email"
+                        label="Correo Electrónico"
+                        description="Ingrese su correo electrónico."
+                        errorMessage="¡Oops! Ese correo no tiene buena pinta."
+                        isClearable
+                        variant="bordered"
+                        size="md"
+                        color="primary"
                     />
-                </Box>
-                <Box sx={{ display: 'flex', alignItems: 'center', width: '100%'}}>
-                    <ContactMailIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
-                    <TextField 
-                        id="email" 
-                        label="Correo Electrónico" 
-                        variant="standard"
-                        helperText="Ingrese su correo electrónico."
-                        fullWidth
+                    <Input 
+                        id="phone"
+                        type="text"
+                        label="Teléfono"
+                        description="Ingrese su número de teléfono."
+                        errorMessage="¡Error! Ese número no suena en nuestro radar."
+                        isClearable
+                        variant="bordered"
+                        size="md"
+                        color="primary"
                     />
-                </Box>
-                <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                    <ContactPhoneIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
-                    <TextField 
-                        id="phone" 
-                        label="Teléfono" 
-                        variant="standard"
-                        helperText="Ingrese su número de teléfono."
-                        fullWidth
-                    />
-                </Box>
-                <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                    <SubjectIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
-                    <TextField 
-                        id="subject" 
-                        label="Asunto" 
-                        variant="standard"
-                        helperText="Ingrese el asunto del mensaje."
-                        fullWidth
-                    />
-                </Box>
-                <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                    <MessageIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
-                    <TextField 
-                        id="email" 
-                        label="Mensaje"
-                        multiline
-                        rows={5}
-                        variant="standard"
-                        helperText="Ingrese el mensaje a enviar."
-                        fullWidth
-                    />
-                </Box>
-                <button>
+                </div>
+                <Input 
+                    id="subject"
+                    type="text"
+                    label="Asunto"
+                    description="Ingrese el asunto de su mensaje."
+                    errorMessage="¡Vaya! Parece que olvidaste ingresar el asunto."
+                    isClearable
+                    variant="bordered"
+                    size="md"
+                    color="primary"
+                />
+                <Textarea
+                    id="message"
+                    type="text"
+                    label="Mensaje"
+                    description="Ingrese su mensaje."
+                    errorMessage="¡Vaya! Tu mensaje está haciendo acrobacias invisibles. Inténtalo de nuevo."
+                    minRows={5}
+                    maxRows={5}
+                    variant="bordered"
+                    size="md"
+                    color="primary"
+                />
+                <button onClick={handleOpen}>
                     <img src={StaticTruck} alt="Truck"/>
                     <p>Enviar</p>
                 </button>
             </form>
+            <Modal 
+                isOpen={isOpen}
+                onClose={() => setIsOpen(false)}
+                backdrop="blur"
+            >
+                <ModalContent>
+                    <ModalHeader className="flex flex-col gap-1">¡Misión Mensaje!</ModalHeader>
+                    <ModalBody>
+                        <p>¡El reloj avanza! ¿Confirmas que deseas enviar este mensaje para una evaluación experta?</p>
+                    </ModalBody>
+                    <ModalFooter>
+                        <Button
+                            onClick={() => setIsOpen(false)}
+                            color="danger"
+                            variant="light"
+                        >
+                            ¡Fin del viaje!
+                        </Button>
+                        <Button
+                            color="primary"
+                            className="text-white font-bold"
+                        >
+                            ¡Lanzar cohete!
+                        </Button>
+                    </ModalFooter>
+                </ModalContent>
+            </Modal>
         </section>
     );
 };

@@ -51,6 +51,11 @@
     padding: 1rem 0;
 }
 
+.contact-us-form-container .form-container .email-and-phone {
+    display: flex;
+    gap: 0 1rem;
+}
+
 .contact-us-form-container .form-container button {
     display: flex;
     flex-direction: column;
@@ -79,5 +84,9 @@
     .contact-us-form-container {
         width: 90%;
         padding: 3vh 5%;
+    }
+
+    .contact-us-form-container .form-container .email-and-phone {
+        flex-direction: column;
     }
 }

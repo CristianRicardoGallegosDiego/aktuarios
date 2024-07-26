@@ -5,6 +5,7 @@ import {
     Routes, 
     Route 
 } from "react-router-dom";
+import { NextUIProvider } from "@nextui-org/react";
 import Footer from "./components/sections/footer/Footer";
 import Home from "./pages/home/Home";
 import ContactUs from "./pages/contact-us/ContactUs.jsx";
@@ -15,14 +16,16 @@ import "./assets/styles/App.css";
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contactanos" element={<ContactUs />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <NextUIProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contactanos" element={<ContactUs />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </NextUIProvider>
   );
 };
 

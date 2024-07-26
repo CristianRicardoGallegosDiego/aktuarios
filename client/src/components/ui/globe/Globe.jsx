@@ -40,6 +40,7 @@ export function Globe({ globeConfig = {}, data = [] }) {
       buildData();
       buildMaterial();
     }
+    // eslint-disable-next-line
   }, [globeRef.current]);
 
   const buildMaterial = () => {
@@ -94,6 +95,7 @@ export function Globe({ globeConfig = {}, data = [] }) {
         .hexPolygonColor(() => config.polygonColor);
       startAnimation();
     }
+    // eslint-disable-next-line
   }, [globeData]);
 
   const startAnimation = () => {
@@ -143,6 +145,7 @@ export function Globe({ globeConfig = {}, data = [] }) {
     return () => {
       clearInterval(interval);
     };
+    // eslint-disable-next-line
   }, [globeRef.current, globeData]);
 
   return (
