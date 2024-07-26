@@ -115,7 +115,7 @@
 
 .first-footer-container .general-and-contact-container .contact-us-container .mails-and-mobiles-container ul li {
     display: flex;
-    padding: 0 5%;
+    padding-left: 5%;
     box-sizing: border-box;
     flex-wrap: wrap;
 }
