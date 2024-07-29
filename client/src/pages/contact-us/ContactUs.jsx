@@ -37,8 +37,8 @@ const ContactUsForm = () => {
             <h1>¡Nos encanta escuchar!</h1>
             <p>
                 Gracias por dedicar su valioso tiempo a interactuar con nosotros. Queremos que se sienta comprendido
-                y apreciado en cada paso del camino. Inicie el diálogo y responderemos rápidamente para que pueda seguir brindando
-                el mejor apoyo a su equipo.
+                y apreciado en cada paso del camino. Inicie el diálogo y responderemos lo antes posible con el
+                objetivo de ofrecerle el mejor servicio de acuerdo a sus necesidades.
             </p>
             <form className="form-container">
                 <Input 

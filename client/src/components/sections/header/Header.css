@@ -34,7 +34,7 @@
 }
 
 .header-container .logo-container a h1:hover {
-    color: var(--blue-3);
+    color: #D8423B;
 }
 
 .header-container .navigation-container {
@@ -47,6 +47,14 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item-header {
+    padding: 10px 0 10px 5%;
+    background-color: aqua;
+    display: flex;
+    border-radius: 0.5rem;
 }
 
 @media screen and (max-width: 1024px) {
