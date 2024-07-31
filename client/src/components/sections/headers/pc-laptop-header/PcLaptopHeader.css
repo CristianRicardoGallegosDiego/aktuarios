@@ -1,0 +1,138 @@
+.pc-laptop-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pc-laptop-header-container .logo-container {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    gap: 0 10px;
+}
+
+.pc-laptop-header-container .logo-container img {
+    width: 50px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5%;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.pc-laptop-header-container .logo-container a img:hover {
+    background-color: var(--gray-1);
+}
+
+.pc-laptop-header-container .logo-container a h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--blue-1);
+    transition: all 0.3s ease-in-out;
+}
+
+.pc-laptop-header-container .logo-container a h1:hover {
+    color: var(--red-2);
+}
+
+.a-pc-laptop-header {
+    display: block;
+    position: relative;
+    padding: 0.2em 10px;
+    cursor: pointer;
+}
+
+.a-pc-laptop-header-blue:hover {
+    color: var(--blue-1);
+}
+
+.a-pc-laptop-header-blue:hover::after  {
+    background-color: var(--blue-1);
+}
+
+.a-pc-laptop-header-orange:hover::after {
+    background-color: var(--red-3);
+}
+
+.a-pc-laptop-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.a-pc-laptop-header:hover::after,
+.a-pc-laptop-header:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
+.a-pc-laptop-header::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+.a-pc-laptop-header:hover::after,
+.a-pc-laptop-header:focus::after{
+    transform: scale(1);
+}
+
+.contact-us-pc-laptop-header-item {
+    color: var(--red-2);
+}
+
+.contact-us-pc-laptop-header-item:hover {
+    color: var(--red-3);
+}
+
+.pc-laptop-header-container .navigation-container {
+    display: flex;
+    width: 60%;
+    max-width: 624px;
+}
+
+.pc-laptop-header-container .navigation-container ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items-pc-laptop-header {
+    padding: 10px 0 10px 2.5%;
+    display: flex;
+    border-radius: 0.5rem;
+    align-items: center;
+}
+
+.menu-items-pc-laptop-header svg {
+    margin-right: 0.5rem;
+}
+
+.menu-items-pc-laptop-header-close {
+    color: var(--red-1);
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-items-pc-laptop-header-close:hover {
+    background-color: var(--red-1);
+    color: var(--white-1);
+}
+
+.menu-items-pc-laptop-header-primary {
+    color: var(--blue-8);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-items-pc-laptop-header-primary:hover {
+    background-color: var(--blue-8);
+    color: var(--white-1);
+}

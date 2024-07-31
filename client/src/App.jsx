@@ -6,7 +6,7 @@ import {
     Route 
 } from "react-router-dom";
 import { NextUIProvider } from "@nextui-org/react";
-import Header from "./components/sections/header/Header.jsx";
+import MainHeader from "./components/sections/headers/main-header/MainHeader.jsx";
 import Footer from "./components/sections/footer/Footer";
 import Home from "./pages/home/Home";
 import ContactUs from "./pages/contact-us/ContactUs.jsx";
@@ -19,7 +19,7 @@ const App = () => {
   return (
     <NextUIProvider>
       <Router>
-        <Header />
+        <MainHeader />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contactanos" element={<ContactUs />} />

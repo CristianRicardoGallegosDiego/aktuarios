@@ -75,6 +75,9 @@
 
 
 
+
+
+
     --white-1: #ffffff;
     --white-2: #f9f9f9;
 
@@ -86,7 +89,12 @@
     --blue-4: #2a3fbf;
     --blue-5: #4a5bd9;
     --blue-6: #6a7ff3;
-    --blue-7: #8a9aff; 
+    --blue-7: #8a9aff;
+    --blue-8: #006FEE;
+
+    --red-1: #DB1057;
+    --red-2: #D8423B;
+    --red-3: #A62F2C;
 }
 
 * {

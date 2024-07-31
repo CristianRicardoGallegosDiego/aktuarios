@@ -1,0 +1,5 @@
+.main-header-container {
+    display: flex;
+    padding: 10px 5%;
+    border-bottom: 2px solid var(--blue-2);
+}
