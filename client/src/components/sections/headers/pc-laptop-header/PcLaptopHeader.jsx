@@ -44,13 +44,13 @@ const MyMenu = () => {
                             <div className="w-full border-small px-1 rounded-small border-default-200">
                                 <Listbox aria-label="Actions" onAction={handleClose} className="w-full">
                                     <ListboxItem key="nif_d3" color="primary" className="w-full text-primary p-0">
-                                        <Link to="servicios/pasivos-contingentes-laborales/nif-d3" className="w-full flex p-2">NIF D3</Link>
+                                        <Link to="/servicios/pasivos-contingentes-laborales/nif-d3" className="w-full flex p-2">NIF D3</Link>
                                     </ListboxItem>
                                     <ListboxItem key="usgaap" color="primary" className="w-full text-primary p-0">
-                                        <Link to="servicios/pasivos-contingentes-laborales/usgaap" className="w-full flex p-2">USGAAP</Link>
+                                        <Link to="/servicios/pasivos-contingentes-laborales/usgaap" className="w-full flex p-2">USGAAP</Link>
                                     </ListboxItem>
                                     <ListboxItem key="nic_19" color="primary" className="w-full text-primary p-0">
-                                        <Link to="servicios/pasivos-contingentes-laborales/nic-19" className="w-full flex p-2">NIC 19</Link>
+                                        <Link to="/servicios/pasivos-contingentes-laborales/nic-19" className="w-full flex p-2">NIC 19</Link>
                                     </ListboxItem>
                                 </Listbox>
                             </div>

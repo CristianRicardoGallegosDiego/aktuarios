@@ -107,6 +107,7 @@ const ContactUsForm = () => {
             <Modal 
                 isOpen={isOpen}
                 onClose={() => setIsOpen(false)}
+                isDismissable={false}
                 backdrop="blur"
             >
                 <ModalContent>

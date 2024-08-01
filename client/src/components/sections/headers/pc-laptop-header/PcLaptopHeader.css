@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    padding: 10px 5%;
 }
 
 .pc-laptop-header-container .logo-container {
@@ -117,7 +118,6 @@
 
 .menu-items-pc-laptop-header-close {
     color: var(--red-1);
-    font-size: 1.125rem;
     font-weight: 600;
     transition: all 0.3s ease-in-out;
 }

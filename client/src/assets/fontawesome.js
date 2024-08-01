@@ -3,7 +3,12 @@ import {
     faEnvelope,
     faPhone,
     faMapLocationDot,
-    faSquareXmark
+    faSquareXmark,
+    faHouse,
+    faPeopleGroup,
+    faBriefcase,
+    faAddressBook,
+    faPuzzlePiece
 } from "@fortawesome/free-solid-svg-icons";
 import {
     faSquareFacebook,
@@ -25,5 +30,10 @@ library.add(
     faSquareInstagram,
     faWhatsapp,
     faMapLocationDot,
-    faSquareXmark
+    faSquareXmark,
+    faHouse,
+    faPeopleGroup,
+    faBriefcase,
+    faAddressBook,
+    faPuzzlePiece
 );

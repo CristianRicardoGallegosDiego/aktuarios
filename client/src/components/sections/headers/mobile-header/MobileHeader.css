@@ -1,0 +1,53 @@
+.logo-mobile-header {
+    width: 36px;
+    height: auto;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.title-mobile-header {
+    color: var(--blue-1);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.title-mobile-header:hover {
+    color: var(--red-2);
+}
+
+.burger-menu-item-mobile-header {
+    color: var(--blue-8);
+    border-radius: 0.25rem;
+    padding: 3px 3%;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.burger-menu-item-mobile-header svg,
+.burger-menu-item-mobile-header-first-list h2 div span span svg {
+    margin-right: 10px;
+}
+
+.burger-menu-item-mobile-header:hover {
+    color: var(--white-1);
+    background-color: var(--blue-8);
+}
+
+.burger-menu-item-mobile-header-first-list {
+    color: var(--blue-8);
+    border-radius: 0.25rem;
+    padding: 0 2.5%;
+    transition: all 0.1 s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.burger-menu-item-mobile-header-first-list:hover {
+    background-color: rgba(220, 220, 220, 0.25);
+}
+
+.burger-menu-item-mobile-header-first-list h2 div span {
+    color: var(--red-2);
+}
