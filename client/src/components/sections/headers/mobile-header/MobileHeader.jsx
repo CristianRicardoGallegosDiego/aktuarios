@@ -18,19 +18,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Logo from "../../../../assets/images/logo.png";
 import "./MobileHeader.css";
 
-const SubServices = () => {
+const SubServices = ({ handleClose }) => {
     return (
         <Accordion selectionMode="multiple">
             <AccordionItem title={<span className="text-base w-full">Pasivos contingentes laborales</span>}>
                 <div className="w-full border-small px-1 rounded-small border-default-200">
                     <Listbox className="w-full">
-                        <ListboxItem key="nif_d3" color="primary" className="w-full text-primary p-0">
+                        <ListboxItem key="nif_d3" color="primary" className="w-full text-primary p-0" onClick={handleClose}>
                             <Link to="/servicios/pasivos-contingentes-laborales/nif-d3" className="w-full flex p-2 text-base">NIF D3</Link>
                         </ListboxItem>
-                        <ListboxItem key="usgaap" color="primary" className="w-full text-primary p-0">
+                        <ListboxItem key="usgaap" color="primary" className="w-full text-primary p-0" onClick={handleClose}>
                             <Link to="/servicios/pasivos-contingentes-laborales/usgaap" className="w-full flex p-2 text-base">USGAAP</Link>
                         </ListboxItem>
-                        <ListboxItem key="nic_19" color="primary" className="w-full text-primary p-0">
+                        <ListboxItem key="nic_19" color="primary" className="w-full text-primary p-0" onClick={handleClose}>
                             <Link to="/servicios/pasivos-contingentes-laborales/nic-19" className="w-full flex p-2 text-base">NIC 19</Link>
                         </ListboxItem>
                     </Listbox>
@@ -40,25 +40,25 @@ const SubServices = () => {
     );
 };
 
-const Services = () => {
+const Services = ({ handleClose }) => {
     return (
         <Accordion selectionMode="multiple">
             <AccordionItem title={<span className="w-full"><FontAwesomeIcon icon="fa-solid fa-puzzle-piece" />Servicios</span>} className="burger-menu-item-mobile-header-first-list">
                 <div className="w-full border-small px-1 rounded-small border-default-200">
                     <Listbox className="w-full">
-                        <ListboxItem key="our_services" color="primary" className="w-full p-0">
+                        <ListboxItem key="our_services" color="primary" className="w-full p-0" onClick={handleClose}>
                             <Link to="/servicios" className="w-full flex p-2 text-base">Descubre nuestros servicios</Link>
                         </ListboxItem>
                         <ListboxItem>
-                            <SubServices />
+                            <SubServices handleClose={handleClose}/>
                         </ListboxItem>
-                        <ListboxItem key="retirement_pension_plans" color="primary" className="w-full text-primary p-0">
+                        <ListboxItem key="retirement_pension_plans" color="primary" className="w-full text-primary p-0" onClick={handleClose}>
                             <Link to="/servicios/planes-pensiones-por-jubilacion" className="w-full flex p-2 text-base">Planes pensiones por jubilación</Link>
                         </ListboxItem>
-                        <ListboxItem key="social_security" color="primary" className="w-full text-primary p-0">
+                        <ListboxItem key="social_security" color="primary" className="w-full text-primary p-0" onClick={handleClose}>
                             <Link to="/servicios/prevision-social" className="w-full flex p-2 text-base">Previsión social</Link>
                         </ListboxItem>
-                        <ListboxItem key="retirement_consulting" color="primary" className="w-full text-primary p-0">
+                        <ListboxItem key="retirement_consulting" color="primary" className="w-full text-primary p-0" onClick={handleClose}>
                             <Link to="/servicios/asesoria-para-el-retiro" className="w-full flex p-2 text-base">Asesoría para el retiro</Link>
                         </ListboxItem>
                     </Listbox>
@@ -78,11 +78,11 @@ const MobileHeader = () => {
     };
 
     return (
-        <Navbar isOpen={isOpenMenu}>
+        <Navbar isMenuOpen={isOpenMenu}>
             <NavbarContent className="flex items-center justify-between">
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    onClick={() => setIsOpenMenu(!isOpenMenu)}
                 />
                 <NavbarBrand>
                     <Link to="/">
@@ -100,22 +100,24 @@ const MobileHeader = () => {
                         <p>Inicio</p>
                     </Link>
                 </NavbarMenuItem>
-                <NavbarMenuItem className="flex w-full">
+                <NavbarMenuItem className="flex w-full" onClick={handleClose}>
                     <Link to="/nosotros" className="flex-1 burger-menu-item-mobile-header">
                         <FontAwesomeIcon icon="fa-solid fa-people-group" />
                         <p>Nosotros</p>
                     </Link>
                 </NavbarMenuItem>
                 <NavbarMenuItem className="flex w-full">
-                    <Services />
+                    <Services 
+                        handleClose={handleClose}
+                    />
                 </NavbarMenuItem>
-                <NavbarMenuItem className="flex w-full">
+                <NavbarMenuItem className="flex w-full" onClick={handleClose}>
                     <Link to="/clientes" className="flex-1 burger-menu-item-mobile-header">
                         <FontAwesomeIcon icon="fa-solid fa-briefcase" />
                         <p>Clientes</p>
                     </Link>
                 </NavbarMenuItem>
-                <NavbarMenuItem className="flex w-full">
+                <NavbarMenuItem className="flex w-full" onClick={handleClose}>
                     <Link to="/contactanos" className="flex-1 burger-menu-item-mobile-header">
                         <FontAwesomeIcon icon="fa-solid fa-address-book" />
                         <p>Contactanos</p>
