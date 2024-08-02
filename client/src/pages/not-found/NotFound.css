@@ -1,8 +1,45 @@
 .not-found-container {
     display: flex;
-    width: 100%;
-    background-image: url("../../assets/images/not-found/404.gif");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.not-found-container h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.not-found-container p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.not-found-container a {
+    font-size: 1.5rem;
+    color: var(--blue-8);
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid var(--blue-8);
+    padding: 1% 5%;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.not-found-container a:hover {
+    background-color: var(--blue-8);
+    color: var(--white-1);
+}
+
+@media screen and (max-width: 1024px) {
+    .not-found-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .not-found-container h1 {
+        font-size: 2.5rem;
+    }
 }
