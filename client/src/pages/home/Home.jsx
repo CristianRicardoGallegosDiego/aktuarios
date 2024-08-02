@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import "./Home.css";
 
@@ -19,6 +20,11 @@ const getFormattedDate = () => {
 const Home = () => {
     return (
         <section className="home-container">
+            <section className="banner-container">
+                <h1>Expertos en Servicios Actuariales: Soluciones Precisas y Confiables</h1>
+                <p>En Aktuarios Desarrollo Actuarial S. C. nos dedicamos a proporcionar servicios innovadores y de alta calidad, apoyados por herramientas y tecnologías de vanguardia.</p>
+                <Link to="/contactanos">Cotizar estudio</Link>
+            </section>
             <section className="letter-container-home">
                 <div className="header-container">
                     <div className="presentation-container">
