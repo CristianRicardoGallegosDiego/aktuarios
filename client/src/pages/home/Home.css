@@ -34,6 +34,7 @@
 
 .home-container .banner-container p {
     margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .home-container .banner-container a {
@@ -167,5 +168,9 @@
     
     .home-container .banner-container h1 {
         font-size: 2rem;
+    }
+
+    .home-container .banner-container p {
+        font-size: 1.25rem;
     }
 }
