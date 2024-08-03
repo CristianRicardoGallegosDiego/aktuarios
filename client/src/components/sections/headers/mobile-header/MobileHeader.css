@@ -1,6 +1,6 @@
 .logo-mobile-header {
-    width: 36px;
-    height: auto;
+    width: auto;
+    height: 50px;
     padding: 3px;
     box-sizing: border-box;
 }
@@ -8,7 +8,7 @@
 .title-mobile-header {
     color: var(--blue-1);
     font-weight: 700;
-    font-size: 30px;
+    font-size: 52px;
 }
 
 .title-mobile-header:hover {

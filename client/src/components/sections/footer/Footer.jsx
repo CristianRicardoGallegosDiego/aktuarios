@@ -124,7 +124,7 @@ const SecondFooter = () => {
     return (
         <div className="second-footer-container">
             <div>
-                <h3>Copyright © 2024 Aktuarios Desarrollo Actuarial S. C. de México</h3>
+                <h3>Copyright © 2024 Aktuarios Desarrollo Actuarial S. C.</h3>
             </div>
             <div>
                 <Link to="/">
