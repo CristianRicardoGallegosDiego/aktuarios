@@ -1,8 +1,10 @@
 .mission-vision-experience-container {
     display: flex;
     width: 100%;
-    height: 100vh;
     position: relative;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 5vh 5% 5vh 5%;
 }
 
 .mission-vision-experience-container::before {
@@ -19,4 +21,71 @@
     transform: rotate(180deg);
     transform-origin: center;
     z-index: -1;
+}
+
+.mission-vision-experience-container div {
+    padding: 3vh 3% 5rem 3%;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: justify;
+}
+
+.mission-vision-experience-container div:hover {
+    transform: translateY(-1rem);
+}
+
+.mission-vision-experience-container div:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.mission-vision-experience-container div h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.mission-vision-experience-container > div:nth-child(1) {
+    background-color: var(--white-1);
+    width: calc(100%/3);
+    color: var(--blue-1);
+    position: relative;
+    margin-bottom: -3rem;
+    z-index: 1;
+}
+
+.mission-vision-experience-container > div:nth-child(2) {
+    width: calc((100%/3) * 2);
+    background-color: var(--blue-3);
+    color: var(--white-1);
+    position: relative;
+    margin-bottom: -3rem;
+    z-index: 2;
+}
+
+.mission-vision-experience-container > div:nth-child(3) {
+    width: 100%;
+    background-color: var(--white-1);
+    color: var(--blue-1);
+    border-radius: 1rem;
+    position: relative;
+    z-index: 3;
+    padding-bottom: calc(3vh + 1rem);
+}
+
+.mission-vision-experience-container > div:nth-child(3) ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .mission-vision-experience-container > div:nth-child(n) {
+        width: 100%;
+    }
+
+    .mission-vision-experience-container div {
+        padding: 3vh 7.5% 5rem 7.5%;
+    }
 }
