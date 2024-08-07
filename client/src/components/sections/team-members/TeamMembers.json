@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "image": "/1.jpg",
+        "name": "José Carlos Del Razo",
+        "description": "Profesional con amplia experiencia y formación en el campo de la actuaría y consultoría en seguros y pensiones.",
+        "social_media": [
+            "https://www.linkedin.com/",
+            "https://wa.me/5543696256",
+            "https://mail.google.com/mail/?view=cm&fs=1&to=josecarlos@aktuarios.com"
+        ]
+    },
+    {
+        "id": 2,
+        "image": "/1.jpg",
+        "name": "Mónica Labastida",
+        "description": "Experta en consultoría con experiencia en beneficios a empleados, pensiones y seguros, especializada en cálculos actuariales y normatividad contable.",
+        "social_media": [
+            "https://www.linkedin.com/",
+            "https://wa.me/5523354696",
+            "https://mail.google.com/mail/?view=cm&fs=1&to=monica@aktuarios.com"
+        ]
+    },
+    {
+        "id": 3,
+        "image": "/1.jpg",
+        "name": "Javier Peralta",
+        "description": "Experto en consultoría actuarial con más de 16 años de experiencia en beneficios a empleados, pensiones y seguros.",
+        "social_media": [
+            "https://www.linkedin.com/",
+            "https://wa.me/5564565115",
+            "https://mail.google.com/mail/?view=cm&fs=1&to=javier@aktuarios.com"
+        ]
+    }
+]

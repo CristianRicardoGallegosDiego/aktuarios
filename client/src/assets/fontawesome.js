@@ -8,18 +8,17 @@ import {
     faPeopleGroup,
     faBriefcase,
     faAddressBook,
-    faPuzzlePiece
+    faPuzzlePiece,
+    faFile
 } from "@fortawesome/free-solid-svg-icons";
 import {
     faSquareFacebook,
     faLinkedin,
     faSquareXTwitter,
     faSquareInstagram,
-    faWhatsapp
+    faWhatsapp,
+    faLinkedinIn
 } from "@fortawesome/free-brands-svg-icons";
-/**import {
-    faMoneyBill1
-} from "@fortawesome/free-regular-svg-icons"*/
 
 library.add(
     faEnvelope,
@@ -35,5 +34,7 @@ library.add(
     faPeopleGroup,
     faBriefcase,
     faAddressBook,
-    faPuzzlePiece
+    faPuzzlePiece,
+    faFile,
+    faLinkedinIn
 );
