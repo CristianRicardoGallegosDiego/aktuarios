@@ -11,6 +11,7 @@ import MainHeader from "./components/sections/headers/main-header/MainHeader.jsx
 import Footer from "./components/sections/footer/Footer.jsx";
 import Home from "./pages/home/Home.jsx";
 import AboutUs from "./pages/about-us/AboutUs.jsx";
+import OurServices from "./pages/our-services/OurServices.jsx";
 import ContactUs from "./pages/contact-us/ContactUs.jsx";
 import NotFound from "./pages/not-found/NotFound.jsx";
 import "./assets/fontawesome.js";
@@ -26,6 +27,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/nosotros" element={<AboutUs />} />
+          <Route path="/servicios" element={<OurServices />} />
           <Route path="/contactanos" element={<ContactUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
