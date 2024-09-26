@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Information from "./information.json";
 import LogoOne from "../../../assets/images/logo_2.jpg";
-import LogoTwo from "../../../assets/images/logo_1.png";
 import "./Footer.css";
 
 const FirstFooter = () => {
@@ -28,7 +27,7 @@ const FirstFooter = () => {
             <div className="info-social-media-container">
                 <img src={LogoOne} alt="Logo" />
                 <div>
-                    <p>¡Conéctate con nosotros y convierte cada click en una oportunidad financiera!</p>
+                    <p>¡Conéctate con nosotros y convierte cada click en una oportunidad!</p>
                     <ul>
                         {
                             social_media.map((social, index) => {
@@ -125,11 +124,6 @@ const SecondFooter = () => {
         <div className="second-footer-container">
             <div>
                 <h3>Copyright © 2024 Aktuarios Desarrollo Actuarial S. C.</h3>
-            </div>
-            <div>
-                <Link to="/">
-                    <img src={LogoTwo} alt="Logo" />
-                </Link>
             </div>
             <div>
                 <h3>Todos los derechos reservados</h3>

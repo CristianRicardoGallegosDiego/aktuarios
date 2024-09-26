@@ -15,7 +15,7 @@ import {
     NavbarMenuItem
 } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Logo from "../../../../assets/images/logo.png";
+import Logo from "../../../../assets/images/logo_3.png";
 import "./MobileHeader.css";
 
 const SubServices = ({ handleClose }) => {
@@ -85,11 +85,8 @@ const MobileHeader = () => {
                     onClick={() => setIsOpenMenu(!isOpenMenu)}
                 />
                 <NavbarBrand>
-                    <Link to="/">
+                    <Link to="/" className="a-header-container">
                         <img src={Logo} alt="Logo" className="logo-mobile-header"/>
-                    </Link>
-                    <Link to="/">
-                        <h1 className="title-mobile-header">ktuarios</h1>
                     </Link>
                 </NavbarBrand>
             </NavbarContent>

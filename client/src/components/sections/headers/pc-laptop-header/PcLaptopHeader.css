@@ -14,8 +14,8 @@
 }
 
 .pc-laptop-header-container .logo-container img {
-    width: 50px;
-    height: auto;
+    width: auto;
+    height: 60px;
     box-sizing: border-box;
     padding: 5%;
     border-radius: 0.25rem;

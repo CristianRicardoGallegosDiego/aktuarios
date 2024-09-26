@@ -16,7 +16,7 @@ import {
     NavbarContent
 } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Logo from "../../../../assets/images/logo.png";
+import Logo from "../../../../assets/images/logo_3.png";
 import "./PcLaptopHeader.css";
 
 const MyMenu = () => {
@@ -78,9 +78,9 @@ const PcLaptopHeader = () => {
                 <Link to="/">
                     <img src={Logo} alt="Logo" />
                 </Link>
-                <Link to="/">
+                {/**<Link to="/">
                     <h1>Aktuarios Desarrollo Actuarial S. C.</h1>
-                </Link>
+                </Link>**/}
             </div>
             <Navbar className="navigation-container">
                 <NavbarContent className="flex flex-col lg:flex-row lg:justify-center" justify="center">
