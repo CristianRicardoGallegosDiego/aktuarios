@@ -1,0 +1,62 @@
+.nifd3-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-1);
+    margin: 3% 5%;
+    border: 1px solid var(--gray-1);
+    border-radius: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.nifd3-container:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px);
+}
+
+.nifd3-container h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--blue-1);
+    padding: 2% 3% 0 3%;
+}
+
+.nifd3-container .information-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem 0;
+}
+
+.nifd3-container .information-container .background-container div,
+.nifd3-container .information-container .scope-container div,
+.nifd3-container .information-container .validity-container div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem 0;
+}
+
+.nifd3-container .information-container .background-container div div ul,
+.nifd3-container .information-container .scope-container div div ul {
+    padding-left: 2rem;
+}
+
+.nifd3-container .information-container .background-container,
+.nifd3-container .information-container .objectives-container,
+.nifd3-container .information-container .scope-container, 
+.nifd3-container .information-container .validity-container {
+    padding: 0% 3%;
+}
+
+.nifd3-container .information-container .background-container h2,
+.nifd3-container .information-container .objectives-container h2,
+.nifd3-container .information-container .scope-container h2, 
+.nifd3-container .information-container .validity-container h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nifd3-container .information-container .validity-container {
+    background-color: var(--blue-12);
+    padding: 2% 3% 2% 3%;
+    border-radius: 0 0 1rem 1rem;
+}

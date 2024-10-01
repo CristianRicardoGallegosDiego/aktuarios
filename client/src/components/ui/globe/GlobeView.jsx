@@ -266,7 +266,7 @@ const GlobeView = () => {
                         Hola :)
                     </h2>
                     <p className="text-center text-base md:text-lg font-normal text-neutral-700 max-w-md mt-2 mx-auto">
-                        Tu aventura con Aktuarios Desarrollo Actuarial S. C. comienza aquí.
+                        Tu aventura con Aktuarios comienza aquí.
                     </p>
                 </motion.div>
                 <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b from-transparent to-[#F9F9F9]  pointer-events-none select-none z-40" />

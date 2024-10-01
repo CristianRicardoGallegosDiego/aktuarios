@@ -83,7 +83,7 @@ const Home = () => {
                         <li>México</li>
                     </ul>
                     <ul className="ul-container-letter-footer">
-                        <li><p>Sitio Web: </p><a href="https://www.aktuarios.com" target="_blank" rel="noopener noreferrer">www.aktuarios.com</a></li>
+                        <li><p>Sitio Web: </p><a href="https://www.aktuarios.com.mx" target="_blank" rel="noopener noreferrer">www.aktuarios.com.mx</a></li>
                         <li><p>Teléfono de Oficina 1: </p> <a href="tel:+525568125783">+52 55 6812 5783</a></li>
                         <li><p>Teléfono de Oficina 2: </p> <a href="tel:+525568125783">+52 55 9291 4643</a></li>
                     </ul>
