@@ -1,0 +1,53 @@
+.usgaap-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-1);
+    margin: 3% 5%;
+    border: 1px solid var(--gray-1);
+    border-radius: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.usgaap-container:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px);
+}
+
+.usgaap-container h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--blue-1);
+    padding: 2% 3% 0 3%;
+}
+
+.usgaap-container .paragraph {
+    padding: 0 3% 2% 3%;
+}
+
+.usgaap-container .information-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blue-12);
+    gap: 0.5rem 0;
+    border-radius: 0 0rem 1rem 1rem;
+    padding: 2% 3%;
+}
+
+.usgaap-container .information-container .main-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem 0;
+}
+
+.usgaap-container .information-container .main-list li h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.usgaap-container .information-container .main-list li div ul {
+    display: flex;
+    padding-top: 0.5rem;
+    flex-direction: column;
+    padding-left: 2rem;
+}

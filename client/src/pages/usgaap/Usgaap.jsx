@@ -3,12 +3,12 @@ import "./Usgaap.css";
 
 const Usgaap = () => {
     return (
-        <section>
+        <section className="usgaap-container">
             <h1>USGAAP</h1>
-            <p>En los Estados Unidos de América la entidad encargada de elaborar los ordenamientos de índole contable es el F.A.S.B. (Financial Accounting Standards Board). Entre los boletines (Statements) que este organismo ha emitido, existen cuatro en particular que requieren la participación de un actuario consultor para su elaboración y aplicación.</p>
-            <div>
+            <p className="paragraph">En los Estados Unidos de América la entidad encargada de elaborar los ordenamientos de índole contable es el F.A.S.B. (Financial Accounting Standards Board). Entre los boletines (Statements) que este organismo ha emitido, existen cuatro en particular que requieren la participación de un actuario consultor para su elaboración y aplicación.</p>
+            <div className="information-container">
                 <p>Estos boletines son los siguientes:</p>
-                <ul>
+                <ul className="main-list">
                     <li>
                         <h2>SFAS-87 (Employer´s Accounting for Pensions)</h2>
                         <div>
@@ -20,8 +20,8 @@ const Usgaap = () => {
                         <div>
                             <p>Este es un boletín complementario al SFAS-87, ya que tiene por objeto la valuación y registro contable de eventos particulares que pueden presentarse en una empresa que cuente con un plan de pensiones o similar:</p>
                             <ul>
-                                <li>La terminación definitiva del Plan (Liquidación de la empresa, venta, fusión, escisión, etc.)</li>
-                                <li>Las liquidaciones parciales de pasivos (Pagos únicos, Ventas parciales, Traspaso de personal entre empresas con reconocimiento de antigüedad, etc.)</li>
+                                <li>📌 La terminación definitiva del Plan (Liquidación de la empresa, venta, fusión, escisión, etc.)</li>
+                                <li>📌 Las liquidaciones parciales de pasivos (Pagos únicos, Ventas parciales, Traspaso de personal entre empresas con reconocimiento de antigüedad, etc.)</li>
                             </ul>
                         </div>
                     </li>
