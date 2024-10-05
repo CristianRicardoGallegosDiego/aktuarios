@@ -1,0 +1,24 @@
+.nic-19-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nic-19-container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.nic-19-container .ul {
+    flex-direction: column;
+    display: flex;
+    gap: 1rem 0;
+}
+
+.nic-19-container ul li h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nic-19-container .ul li ul li {
+    padding-left: 2rem;
+}

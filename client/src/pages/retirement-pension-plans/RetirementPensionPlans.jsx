@@ -3,7 +3,7 @@ import "./RetirementPensionPlans.css";
 
 const RetirementPensionPlans = () => {
     return (
-        <section>
+        <section className="retirement-pension-plans">
             <h1>Planes de Pensiones por Jubilación</h1>
             <div>
                 <p>Mediante la implantación de un plan de pensiones por jubilación, se pretende otorgar a los empleados de la empresa un beneficio que les permita llegar a la edad de retiro con la seguridad de obtener un ingreso, ya sea en forma mensual o de pago único, que sumado a los beneficios que por este concepto conceden las diferentes instituciones de seguridad social, les resulte suficiente para afrontar su futuro económico.</p>

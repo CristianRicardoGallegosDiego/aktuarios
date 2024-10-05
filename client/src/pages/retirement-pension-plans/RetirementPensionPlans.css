@@ -1,0 +1,15 @@
+.retirement-pension-plans {
+    display: flex;
+    flex-direction: column;
+}
+
+.retirement-pension-plans h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.retirement-pension-plans div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem 0;
+}

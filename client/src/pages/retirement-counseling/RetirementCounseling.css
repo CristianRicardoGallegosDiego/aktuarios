@@ -1,0 +1,14 @@
+.retirement-counseling-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem 0;
+}
+
+.retirement-counseling-container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.retirement-counseling-container div ul {
+    padding-left: 2rem;
+}
