@@ -4,10 +4,10 @@ import "./OurServices.css";
 
 const OurServices = () => {
     return (
-        <section>
-            <div>
+        <section className="our-services-container">
+            <div className="information-container">
                 <h1>Nuestros Servicios</h1>
-                <div>
+                <div className="services-container">
                     {
                         Services.map((service, index) => {
                             return (
@@ -18,7 +18,7 @@ const OurServices = () => {
                                             service.list.map((item, index) => {
                                                 return (
                                                     <li key={index}>
-                                                        {item}
+                                                        * {item}
                                                     </li>
                                                 );
                                             })
