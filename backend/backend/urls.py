@@ -19,6 +19,10 @@ from django.urls.conf import include
 
 urlpatterns = [
     path(
+        '',
+        include('modules.core.urls')
+    ),
+    path(
         'mail/',
         include('modules.mail.urls')
     )

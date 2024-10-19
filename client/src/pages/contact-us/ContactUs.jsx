@@ -2,6 +2,7 @@ import React, {
     useState
 } from "react";
 import GlobeView from "../../components/ui/globe/GlobeView";
+import { sendEmail } from "../../services/email";
 import StaticTruck from "../../assets/images/Truck.svg";
 //import DynamicTruck from "../../assets/images/Truck.gif";
 import "./ContactUs.css";
@@ -31,6 +32,29 @@ const ContactUsForm = () => {
         e.preventDefault();
         setIsOpen(true);
     };
+
+    const handleEmail = async (e) => {
+        e.preventDefault();
+        setIsOpen(false);
+
+        const formData = {
+            fullname: "Tu nombre",
+            email: "tu_email@example.com",
+            phone_number: "1234567890",
+            subject: "Asunto del correo",
+            message: "Mensaje del correo",
+        };
+
+        try {
+            const result = await sendEmail(formData);
+            alert(result.message);
+        } catch (error) {
+            alert(error.message);
+        }
+    };
+    
+    
+    
 
     return (
         <section className="contact-us-form-container">
@@ -126,6 +150,7 @@ const ContactUsForm = () => {
                         <Button
                             color="primary"
                             className="text-white font-bold"
+                            onClick={handleEmail}
                         >
                             ¡Lanzar cohete!
                         </Button>

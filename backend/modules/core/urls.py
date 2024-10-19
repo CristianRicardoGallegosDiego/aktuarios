@@ -6,10 +6,5 @@ urlpatterns = [
         '',
         views.index,
         name='index'
-    ),
-    path(
-        'send-mail/',
-        views.my_courier,
-        name='my_courier'
     )
 ]
