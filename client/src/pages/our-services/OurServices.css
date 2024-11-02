@@ -1,33 +1,82 @@
 .our-services-container {
-
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.our-services-container .information-container {
+.our-services-container .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.our-services-container .banner h1 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    font-size: 118px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #DE443C;
+    text-align: center;
+}
+
+.our-services-container .banner div {
+    width: 50%;
+    height: 100%;
+    background-image: 
+    linear-gradient(rgba(10, 29, 144, 0.60), rgba(10, 29, 144, 0.60)),
+    url('../../assets/images/our-services/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay; 
+}
+
+.our-services-container .more-information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10vh 0;
+}
+
+.our-services-container .more-information-container .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10%;
+    width: 100%;
+}
+
+.our-services-container .more-information-container .item img {
+    max-width: 400px;
+    height: auto;
+}
+
+.our-services-container .more-information-container .item div {
+    max-width: 577px;
     display: flex;
     flex-direction: column;
 }
 
-.our-services-container .information-container h1 {
-    font-size: 2.5rem;
+.our-services-container .more-information-container .item div h2 {
     font-weight: 700;
-}
+    font-size: 48px;
+    color: #DE443C;
+}   
 
-.our-services-container .information-container .services-container {
+.our-services-container .more-information-container .item div ul {
     display: flex;
     flex-direction: column;
-    gap: 2rem 0;
-}
-
-.our-services-container .information-container .services-container div {
-    border: 1px solid #000;
-    padding: 1rem 2rem;
-}
-
-.our-services-container .information-container .services-container div h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.our-services-container .information-container .services-container div ul li {
-    padding-left: 2rem;
-}
+    gap: 1rem 0;
+    list-style: outside;
+    padding-left: 20px;
+    padding-top: 2rem;
+}   

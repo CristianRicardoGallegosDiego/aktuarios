@@ -1,87 +1,100 @@
 .nifd3-container {
     display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    background-color: var(--white-1);
-    margin: 3% 5%;
-    border: 1px solid var(--gray-1);
-    border-radius: 1rem;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
 }
 
-.nifd3-container:hover {
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-    transform: translateY(-4px);
+.nifd3-container .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
 }
 
-.nifd3-container h1 {
-    font-weight: 900;
-    font-size: 3rem;
-    color: var(--blue-1);
-    padding: 2% 3% 0 3%;
+.nifd3-container .banner h1 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    font-size: 118px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1A2CB1;
+}
+
+.nifd3-container .banner div {
+    width: 50%;
+    height: 100%;
+    background-image: 
+    linear-gradient(rgba(222, 68, 60, 0.60), rgba(222, 68, 60, 0.60)),
+    url('../../assets/images/nif-d3/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay; 
 }
 
 .nifd3-container .information-container {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    gap: 1.5rem 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh 0;
+    padding: 10vh 0;
 }
 
-.nifd3-container .information-container .background-container div,
-.nifd3-container .information-container .scope-container div,
-.nifd3-container .information-container .validity-container div {
+.nifd3-container .information-container .item-container-one {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.nifd3-container .information-container .item-container-one p {
+    max-width: 400px;
+    font-size: 24px;
+}
+
+.nifd3-container .information-container .item-container-one img,
+.nifd3-container .information-container .item-container-two img {
+    max-width: 400px;
+    height: auto;
+}
+
+.nifd3-container .information-container .item-container-two {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.nifd3-container .information-container .item-container-two div {
+    display: flex;
+    max-width: 680px;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.nifd3-container .information-container .item-container-two div p {
+    color: #DE443C;
+    font-weight: bold;
+    font-size: 36px;
+    padding-bottom: 1rem;
+}
+
+.nifd3-container .information-container .item-container-two div ul {
+    list-style-type: disc;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem 0;
+    width: 100%;
+    gap: 2rem 0;
 }
 
-.nifd3-container .information-container .background-container div div ul,
-.nifd3-container .information-container .scope-container div div ul {
-    padding-left: 2rem;
-}
-
-.nifd3-container .information-container .background-container,
-.nifd3-container .information-container .objectives-container,
-.nifd3-container .information-container .scope-container {
-    padding: 0% 3%;
-}
-
-.nifd3-container .information-container .background-container h2,
-.nifd3-container .information-container .objectives-container h2,
-.nifd3-container .information-container .scope-container h2, 
-.nifd3-container .information-container .validity-container h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.nifd3-container .information-container .validity-container {
-    background-color: var(--blue-12);
-    padding: 2% 3% 2% 3%;
-    border-radius: 0 0 1rem 1rem;
-}
-
-@media screen and (max-width: 1024px) {
-    .nifd3-container {
-        margin: 5% 5%;
-    }
-
-    .nifd3-container h1 {
-        padding: 5% 7.5% 0 7.5%;
-        font-size: 2rem;
-    }
-
-    .nifd3-container .information-container .background-container,
-    .nifd3-container .information-container .objectives-container,
-    .nifd3-container .information-container .scope-container{
-        padding: 0% 7.5%;
-    }
-
-    .nifd3-container .information-container .background-container div div ul,
-    .nifd3-container .information-container .scope-container div div ul {
-        padding-left: 1rem;
-    }
-
-    .nifd3-container .information-container .validity-container {
-        padding: 1.5rem 7.5% 5% 7.5%;
-    }
+.nifd3-container .information-container .item-container-two div ul li strong {
+    color: #DE443C;
 }

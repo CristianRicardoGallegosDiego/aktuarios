@@ -4,10 +4,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('../../assets/images/background_1.svg');
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: cover;
     width: 100%;
 }
 
@@ -52,125 +48,72 @@
     color: var(--white-1);
 }
 
-.letter-container-home {
-    background-color: var(--white-1);
-    width: 90%;
-    max-width: 1024px;
-    padding: 3% 7.5%;
-    margin: 5vh 0 5vh 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+.home-container .title {
+    background-color: #DE443C;
     display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-container .title h2 {
+    max-width: 905px;
+    font-weight: 900;
+    font-size: 105px;
+    text-align: center;
+    color: var(--white-1);
+}
+
+.home-container .title h2 em {
+    font-style: italic;
+}
+
+.home-container .more-info-container {
+    display: flex;
+    width: 100%;
     flex-direction: column;
+    background-image: url('../../assets/images/home/background1.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 13vh 0 40vh 0;
 }
 
-.letter-container-home:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
+.home-container .more-info-container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.letter-container-home .header-container .presentation-container {
+.home-container .more-info-container div p {
+    max-width: 420px;
+    font-size: 1.25rem;
+}
+
+.home-container .more-info-container div p strong {
+    color: #DE443C;
+}
+
+.home-container .acknowledgments-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
-}
-
-.letter-container-home .header-container .presentation-container img {
-    width: 15%;
-    margin-right: 5%;
-}
-
-.letter-container-home .header-container .presentation-container h1 {
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-.letter-container-home .header-container .date {
-    display: flex;
     width: 100%;
-    justify-content: flex-end;
-    text-align: right;
+    height: 100vh;
+    background-image: 
+        linear-gradient(to top, rgba(10, 29, 144, 1), rgba(10, 29, 144, 0) 100%),
+        url('../../assets/images/home/background2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay; 
 }
 
-.letter-container-home .body-container {
-    margin-top: 5%;
-}
-
-.letter-container-home .body-container h2 {
-    margin-bottom: 1.5rem;
-}
-
-.letter-container-home .body-container .text-info-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem 0;
-    text-align: justify;
-}
-
-.letter-container-home .body-container .text-info-container p {
-    text-indent: 30px;
-}
-
-.letter-container-home .body-container .farewell-container {
-    margin-top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.letter-container-home .body-container .farewell-container > p:nth-child(1) {
-    margin-bottom: 0.5rem;
-}
-
-.letter-container-home .body-container .farewell-container .bold {
-    font-weight: 700;
-}
-
-.letter-container-home .letter-footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20%;
-}
-
-.letter-container-home .letter-footer ul li p {
-    color: var(--gray-2);
-}
-
-.letter-container-home .letter-footer .ul-container-letter-footer {
-    gap: 0.5rem 0;
-    display: flex;
-    flex-direction: column;
-}
-
-@media screen and (max-width: 1024px) {
-    .letter-container-home .header-container .presentation-container h1 {
-        font-size: 1.25rem;
-    }
-
-    .letter-container-home .header-container .date {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .letter-container-home .body-container .farewell-container .bold {
-        margin-bottom: 5%;
-    }
-
-    .letter-container-home .letter-footer {
-        display: none;
-    }
-
-    .home-container .banner-container {
-        justify-content: flex-start;
-        padding: 30% 5%;
-        height: auto;
-    }
-    
-    .home-container .banner-container h1 {
-        font-size: 2rem;
-    }
-
-    .home-container .banner-container p {
-        font-size: 1.25rem;
-    }
+.home-container .acknowledgments-container h2 {
+    max-width: 917px;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 51px;
+    text-align: center;
+    color: var(--white-1);
 }

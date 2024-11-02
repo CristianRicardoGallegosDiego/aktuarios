@@ -5,3 +5,131 @@
     justify-content: center;
     width: 100%;
 }
+
+.about-us-container .banner-container {
+    display: flex;
+    width: 100%;
+    background-image: 
+        url('../../assets//images/about-us/background1.png'),
+        url('../../assets//images/about-us/background2.png');
+    background-position: 
+        right top,
+        left bottom;
+    background-size: 
+        contain,
+        contain;
+    background-repeat: 
+        no-repeat,
+        no-repeat; 
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.about-us-container .banner-container section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
+    padding-bottom: 2rem;
+}
+
+.about-us-container .banner-container section h2 {
+    font-weight: 900;
+    font-size: 78px;
+    color: #DE443C;
+    margin-left: 10%;
+}
+
+.about-us-container .banner-container section div {
+    margin-left: 20%;
+}
+
+.about-us-container .banner-container section div h3 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+    color: #0A1D90;
+    padding-top: 1rem;
+}
+
+.about-us-container .banner-container section div p {
+    font-size: 1.5rem;
+}
+
+.about-us-container .banner-container .image-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: auto;
+    margin-top: auto; 
+}
+
+.about-us-container .banner-container .image-container img {
+    width: auto;
+    height: 700px;
+    object-fit: cover;
+}
+
+
+.about-us-container .experience-container {
+    background-color: #A82D2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.about-us-container .experience-container h2 {
+    font-weight: 900;
+    font-size: 91px;
+    color: var(--white-1);
+    padding: 15vh 0;
+}
+
+.about-us-container .more-experience-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+
+.about-us-container .more-experience-container .first-container {
+    max-width: 1149px;
+    padding-bottom: 3rem;
+}
+
+.about-us-container .more-experience-container .first-container {
+    font-size: 1.75rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.about-us-container .more-experience-container .second-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-container .more-experience-container .second-container div {
+    display: flex;
+    align-items: center;
+    gap: 1rem 10%;
+}
+
+.about-us-container .more-experience-container .second-container div p {
+    max-width: 435px;
+    font-size: 1.75rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.about-us-container .more-experience-container .second-container div img {
+    max-width: 450px;
+    height: auto;
+}

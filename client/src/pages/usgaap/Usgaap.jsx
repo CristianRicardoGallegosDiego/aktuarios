@@ -1,44 +1,25 @@
 import React from "react";
+import Image1 from "../../assets/images/usgaap/image1.png";
+import Image2 from "../../assets/images/usgaap/image2.png";
 import "./Usgaap.css";
 
 const Usgaap = () => {
     return (
         <section className="usgaap-container">
-            <h1>USGAAP</h1>
-            <p className="paragraph">En los Estados Unidos de América la entidad encargada de elaborar los ordenamientos de índole contable es el F.A.S.B. (Financial Accounting Standards Board). Entre los boletines (Statements) que este organismo ha emitido, existen cuatro en particular que requieren la participación de un actuario consultor para su elaboración y aplicación.</p>
-            <div className="information-container">
-                <p>Estos boletines son los siguientes:</p>
-                <ul className="main-list">
-                    <li>
-                        <h2>SFAS-87 (Employer´s Accounting for Pensions)</h2>
-                        <div>
-                            <p>Tiene como alcance la determinación de obligaciones laborales y aplicación contable generadas por los Planes de Pensiones, Planes de Retiro, Beneficios por Antigüedad y similares, que las empresas otorgan a sus trabajadores (La NIF D-3 es su equivalente).</p>
-                        </div>
-                    </li>
-                    <li>
-                        <h2>SFAS-88 (Curtailments and Termination Benefits)</h2>
-                        <div>
-                            <p>Este es un boletín complementario al SFAS-87, ya que tiene por objeto la valuación y registro contable de eventos particulares que pueden presentarse en una empresa que cuente con un plan de pensiones o similar:</p>
-                            <ul>
-                                <li>📌 La terminación definitiva del Plan (Liquidación de la empresa, venta, fusión, escisión, etc.)</li>
-                                <li>📌 Las liquidaciones parciales de pasivos (Pagos únicos, Ventas parciales, Traspaso de personal entre empresas con reconocimiento de antigüedad, etc.)</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <h2>SFAS-106 (Post-Retirement Benefits)</h2>
-                        <div>
-                            <p>Este boletín tiene como objetivo la valuación y contabilización de los beneficios diferentes a pensiones que la empresa otorga a quienes se retiran de la empresa, como por ejemplo los gastos médicos a jubilados.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <h2>SFAS-112 (Post-Employment Benefits)</h2>
-                        <div>
-                            <p>Comprende el registro contable del monto de los pasivos generados por los beneficios contingentes diferentes al sueldo pagado a los empleados durante su vida laboral en la empresa hasta que se retiran, como por ejemplo: La extensión de las prestaciones de la empresa a trabajadores que dejen de laborar de manera temporal.</p>
-                        </div>
-                    </li>
-                </ul>
+            <div className="banner">
+                <h1>USGAAP</h1>
+                <div></div>
             </div>
+            <section className="body-container">
+                <div>
+                    <p>Los USGAAP (United States Generally Accepted Accounting Principles) son los principios de contabilidad generalmente aceptados y usados por las compañías con sede en Estados Unidos o que cotizan en Wall Street. Abarcan estándares, interpretaciones, opiniones, boletines y maneras aceptadas de llevar la contabilidad para dichas empresas.</p>
+                    <img src={Image1}  alt="Imagen de la empresa"/>
+                </div>
+                <div>
+                    <img src={Image2} alt="Imagen de la empresa"/>
+                    <p>En los Estados Unidos, los planes de beneficio definido y otros planes posteriores al retiro; así como los beneficios posteriores al empleo no relacionadas con la jubilación deben seguir las reglas del Accounting Standards Codification (ASC 712 y ASC 715) del Consejo de Normas de Contabilidad Financiera (FASB). La valuación ASC determina el gasto (o ingreso) que se carga en el estado de ingresos netos de la empresa, así como el pasivo (o activo) que se informa en el balance general de la empresa.</p>
+                </div>
+            </section>
         </section>
     );
 };
