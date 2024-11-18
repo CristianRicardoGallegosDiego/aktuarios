@@ -20,7 +20,7 @@
     align-items: center;
     width: 50%;
     height: 100%;
-    font-size: 118px;
+    font-size: 5rem;
     font-weight: 700;
     color: #fff;
     background-color: #1A2CB1;
@@ -56,7 +56,7 @@
 
 .nifd3-container .information-container .item-container-one p {
     max-width: 400px;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .nifd3-container .information-container .item-container-one img,
@@ -76,13 +76,13 @@
     display: flex;
     max-width: 680px;
     flex-direction: column;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .nifd3-container .information-container .item-container-two div p {
     color: #DE443C;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 2rem;
     padding-bottom: 1rem;
 }
 

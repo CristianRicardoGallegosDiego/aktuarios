@@ -14,7 +14,7 @@ import AboutUs from "./pages/about-us/AboutUs.jsx";
 import OurServices from "./pages/our-services/OurServices.jsx";
 import NifD3 from "./pages/nif-d3/NifD3.jsx";
 import Usgaap from "./pages/usgaap/Usgaap.jsx";
-import Nic19 from "./pages/nic-19/Nic19.jsx";
+import IAS from "./pages/ias/IAS.jsx";
 import RetirementPensionPlans from "./pages/retirement-pension-plans/RetirementPensionPlans.jsx";
 import SocialWelfare from "./pages/social-welfare/SocialWelfare.jsx";
 import RetirementCounseling from "./pages/retirement-counseling/RetirementCounseling.jsx";
@@ -37,7 +37,7 @@ const App = () => {
           <Route path="/servicios"                                          element={<OurServices />} />
           <Route path="/servicios/pasivos-contingentes-laborales/nif-d3"    element={<NifD3 />} />
           <Route path="/servicios/pasivos-contingentes-laborales/usgaap"    element={<Usgaap />} />
-          <Route path="/servicios/pasivos-contingentes-laborales/nic-19"    element={<Nic19 />} />
+          <Route path="/servicios/pasivos-contingentes-laborales/ias"       element={<IAS />} />
           <Route path="/servicios/planes-pensiones-por-jubilacion"          element={<RetirementPensionPlans />} />
           <Route path="/servicios/prevision-social"                         element={<SocialWelfare />} />
           <Route path="/servicios/asesoria-para-el-retiro"                  element={<RetirementCounseling />} />

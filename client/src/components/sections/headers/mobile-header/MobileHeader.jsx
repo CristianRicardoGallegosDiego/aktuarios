@@ -30,8 +30,8 @@ const SubServices = ({ handleClose }) => {
                         <ListboxItem key="usgaap" color="primary" className="w-full text-primary p-0" onClick={handleClose}>
                             <Link to="/servicios/pasivos-contingentes-laborales/usgaap" className="w-full flex p-2 text-base">USGAAP</Link>
                         </ListboxItem>
-                        <ListboxItem key="nic_19" color="primary" className="w-full text-primary p-0" onClick={handleClose}>
-                            <Link to="/servicios/pasivos-contingentes-laborales/nic-19" className="w-full flex p-2 text-base">NIC 19</Link>
+                        <ListboxItem key="ias" color="primary" className="w-full text-primary p-0" onClick={handleClose}>
+                            <Link to="/servicios/pasivos-contingentes-laborales/ias" className="w-full flex p-2 text-base">IAS</Link>
                         </ListboxItem>
                     </Listbox>
                 </div>
