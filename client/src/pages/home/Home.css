@@ -60,7 +60,7 @@
 .home-container .title h2 {
     max-width: 905px;
     font-weight: 900;
-    font-size: 105px;
+    font-size: 5rem;
     text-align: center;
     color: var(--white-1);
 }
@@ -113,7 +113,7 @@
     max-width: 917px;
     font-weight: 600;
     font-style: italic;
-    font-size: 51px;
+    font-size: 3rem;
     text-align: center;
     color: var(--white-1);
 }

@@ -37,7 +37,7 @@
 
 .about-us-container .banner-container section h2 {
     font-weight: 900;
-    font-size: 78px;
+    font-size: 5rem;
     color: #DE443C;
     margin-left: 10%;
 }
@@ -46,10 +46,15 @@
     margin-left: 20%;
 }
 
+.about-us-container .banner-container section div:nth-child(3) {
+    padding-top: 2rem;
+    padding-bottom: 20vh;
+}
+
 .about-us-container .banner-container section div h3 {
     font-style: italic;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 3rem;
     color: #0A1D90;
     padding-top: 1rem;
 }
@@ -83,7 +88,7 @@
 
 .about-us-container .experience-container h2 {
     font-weight: 900;
-    font-size: 91px;
+    font-size: 5rem;
     color: var(--white-1);
     padding: 15vh 0;
 }
@@ -104,7 +109,7 @@
 }
 
 .about-us-container .more-experience-container .first-container {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     text-align: center;
     font-style: italic;
 }
@@ -114,17 +119,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .about-us-container .more-experience-container .second-container div {
     display: flex;
     align-items: center;
     gap: 1rem 10%;
+    width: 100%;
+    justify-content: center;
 }
 
 .about-us-container .more-experience-container .second-container div p {
     max-width: 435px;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-style: italic;
     text-align: center;
 }
