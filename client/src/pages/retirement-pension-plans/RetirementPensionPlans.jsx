@@ -1,34 +1,20 @@
 import React from "react";
-import Image1 from "../../assets/images/retirement-pension-plans/image1.png";
-import Image2 from "../../assets/images/retirement-pension-plans/image2.png";
+import LinksContainer from "../../components/common/links-container/LinksContainer";
 import "./RetirementPensionPlans.css";
 
 const RetirementPensionPlans = () => {
     return (
         <section className="retirement-pension-plans">
             <div className="banner">
-                <h1>Planes de Pensiones por Jubilación</h1>
+                <h1>Valuación Actuarial y revisión de los pasivos laborales</h1>
                 <div></div>
             </div>
             <section className="information-container">
-                <div className="items">
-                    <div className="ps">
-                        <p>La implantación de un plan de pensiones busca asegurar a los empleados un ingreso al llegar a la jubilación, complementando los beneficios de las instituciones de seguridad social.</p>
-                        <p>Constituir una reserva para jubilaciones reconoce el envejecimiento de los empleados y permite amortizar el pasivo generado por su antigüedad en la empresa.</p>
-                    </div>
-                    <div className="img">
-                        <img src={Image1} alt="Imagen de la empresa."/>
-                    </div>
+                <div className="more-info">
+                    <p>Valuación actuarial de pasivos laborales bajo NIF D-3, ASC 715, ASC 712 (principios contables norteamericanos) y IAS 19 (principios contables internacionales).</p>
+                    <p>Revisión de la razonabilidad de los pasivos laborales y el correcto apego de su reconocimiento bajo las distintas normas contables aplicables.</p>
                 </div>
-                <div className="items">
-                    <div className="img">
-                        <img src={Image2} alt="Imagen de la empresa."/>
-                    </div>
-                    <div className="ps">
-                        <p>La labor del Actuario Consultor incluye diseñar el plan de pensiones adecuado, valorar los pasivos y su financiamiento, administrar el plan, implementarlo ante autoridades y comunicarlo al personal.</p>
-                        <p>La labor del Actuario Consultor incluye diseñar el plan de pensiones adecuado, valorar pasivos y su financiamiento, administrar el plan, implementarlo y comunicarlo al personal.</p>
-                    </div>
-                </div>
+                <LinksContainer />
             </section>
         </section>
     );

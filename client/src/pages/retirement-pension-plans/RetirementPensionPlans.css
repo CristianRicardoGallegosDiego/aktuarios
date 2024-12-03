@@ -23,7 +23,7 @@
     font-size: 5rem;
     font-weight: 700;
     color: #fff;
-    background-color: #0072F6;
+    background-color: #DE443C;
     padding: 0 5%;
 }
 
@@ -40,34 +40,18 @@
 
 .retirement-pension-plans .information-container {
     display: flex;
-    flex-direction: column;
     width: 100%;
-    padding: 5% 5%;
-    gap: 3rem 0;
+    flex-direction: column;
+    max-width: 1080px;
 }
 
-.retirement-pension-plans .information-container .items {
+.retirement-pension-plans .information-container .more-info {
     display: flex;
-    align-items: center;
+    padding-top: 3rem;
     justify-content: space-between;
-    width: 100%;
 }
 
-.retirement-pension-plans .information-container .items .ps {
-    display: flex;
-    width: 45%;
+.retirement-pension-plans .information-container .more-info p {
+    width: 40%;
     font-size: 1.5rem;
-    flex-direction: column;
-    gap: 3rem 0;
-}
-
-.retirement-pension-plans .information-container .items .img {
-    display: flex;
-    width: 45%;
-    justify-content: center;
-}
-
-.retirement-pension-plans .information-container .items .img img {
-    max-width: 379px;
-    max-height: auto;
 }
