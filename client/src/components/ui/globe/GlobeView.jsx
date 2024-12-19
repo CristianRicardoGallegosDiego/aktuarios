@@ -262,10 +262,10 @@ const GlobeView = () => {
                     }}
                     className="div"
                 >
-                    <h2 className="text-center text-xl md:text-4xl font-bold text-black">
+                    <h2 className="text-center text-xl md:text-4xl font-bold text-black" style={ {color: "#DE443C", fontSize:"3rem", fontWeight:"900"} }>
                         Hola :)
                     </h2>
-                    <p className="text-center text-base md:text-lg font-normal text-neutral-700 max-w-md mt-2 mx-auto">
+                    <p className="text-center text-base md:text-lg font-normal text-neutral-700 max-w-md mt-2 mx-auto" style={ {color: "#0072F6", fontSize:"1.25rem", fontWeight:"900"} }>
                         Tu aventura con Aktuarios comienza aquí.
                     </p>
                 </motion.div>

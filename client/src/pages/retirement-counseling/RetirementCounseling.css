@@ -23,7 +23,7 @@
     font-size: 5rem;
     font-weight: 700;
     color: #fff;
-    background-color: #93A3FF;
+    background-color: #A62F2C;
     padding: 0 5%;
 }
 
@@ -31,9 +31,31 @@
     width: 50%;
     height: 100%;
     background-image: 
-    linear-gradient(rgba(114, 130, 250, 0.60), rgba(114, 130, 250, 0.60)),
-    url('../../assets/images/nif-d3/banner.png');
+    linear-gradient(rgba(10, 29, 144, 0.60), rgba(10, 29, 144, 0.60)),
+    url('../../assets/images/our-services/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay; 
+}
+
+.retirement-counseling-container .information-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    max-width: 1080px;
+    padding-top: 3rem;
+}
+
+.retirement-counseling-container .information-container .points-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.retirement-counseling-container .information-container .points-container ul {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    font-size: 1.5rem;
+    gap: 1rem 0;
 }

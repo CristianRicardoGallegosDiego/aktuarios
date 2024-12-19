@@ -3,7 +3,7 @@ import React, {
 } from "react";
 import GlobeView from "../../components/ui/globe/GlobeView";
 import { sendEmail } from "../../services/email";
-import StaticTruck from "../../assets/images/Truck.svg";
+//import StaticTruck from "../../assets/images/Truck.svg";
 //import DynamicTruck from "../../assets/images/Truck.gif";
 import "./ContactUs.css";
 
@@ -69,62 +69,61 @@ const ContactUsForm = () => {
                     id="name"
                     type="text"
                     label="Nombre Completo"
-                    description="Ingrese su nombre completo."
                     errorMessage="¿Así se escribe? Inténtalo otra vez."
                     isClearable
                     variant="bordered"
                     size="md"
-                    color="primary"
+                    color="default"
+                    className="my-input"
                 />
                 <div className="email-and-phone">
                     <Input 
                         id="email"
                         type="email"
                         label="Correo Electrónico"
-                        description="Ingrese su correo electrónico."
                         errorMessage="¡Oops! Ese correo no tiene buena pinta."
                         isClearable
                         variant="bordered"
                         size="md"
-                        color="primary"
+                        color="default"
+                        className="my-input"
                     />
                     <Input 
                         id="phone"
                         type="text"
                         label="Teléfono"
-                        description="Ingrese su número de teléfono."
                         errorMessage="¡Error! Ese número no suena en nuestro radar."
                         isClearable
                         variant="bordered"
                         size="md"
-                        color="primary"
+                        color="default"
+                        className="my-input"
                     />
                 </div>
                 <Input 
                     id="subject"
                     type="text"
                     label="Asunto"
-                    description="Ingrese el asunto de su mensaje."
                     errorMessage="¡Vaya! Parece que olvidaste ingresar el asunto."
                     isClearable
                     variant="bordered"
                     size="md"
-                    color="primary"
+                    color="default"
+                    className="my-input"
                 />
                 <Textarea
                     id="message"
                     type="text"
                     label="Mensaje"
-                    description="Ingrese su mensaje."
                     errorMessage="¡Vaya! Tu mensaje está haciendo acrobacias invisibles. Inténtalo de nuevo."
                     minRows={5}
                     maxRows={5}
                     variant="bordered"
                     size="md"
-                    color="primary"
+                    color="default"
+                    className="my-input"
                 />
                 <button onClick={handleOpen}>
-                    <img src={StaticTruck} alt="Truck"/>
                     <p>Enviar</p>
                 </button>
             </form>
