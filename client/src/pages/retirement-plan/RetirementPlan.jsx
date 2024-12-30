@@ -1,8 +1,8 @@
 import React from "react";
 import LinksContainer from "../../components/common/links-container/LinksContainer";
-import "./SocialWelfare.css";
+import "./RetirementPlan.css";
 
-const SocialWelfare = () => {
+const RetirementPlan = () => {
     return (
         <section className="social-welfare-container">
             <div className="banner">
@@ -11,8 +11,8 @@ const SocialWelfare = () => {
             </div>
             <section className="information-container">
                 <div className="more-info">
-                    <p>Valuación actuarial de pasivos laborales bajo NIF D-3, ASC 715, ASC 712 (principios contables norteamericanos) y IAS 19 (principios contables internacionales).</p>
-                    <p>Revisión de la razonabilidad de los pasivos laborales y el correcto apego de su reconocimiento bajo las distintas normas contables aplicables.</p>
+                    <li>Valuación actuarial de pasivos laborales bajo NIF D-3, ASC 715, ASC 712 (principios contables norteamericanos) y IAS 19 (principios contables internacionales).</li>
+                    <li>Revisión de la razonabilidad de los pasivos laborales y el correcto apego de su reconocimiento bajo las distintas normas contables aplicables.</li>
                 </div>
                 <LinksContainer />
             </section>
@@ -20,4 +20,4 @@ const SocialWelfare = () => {
     );
 };
 
-export default SocialWelfare;
+export default RetirementPlan;

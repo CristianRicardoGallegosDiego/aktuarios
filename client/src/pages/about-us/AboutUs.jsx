@@ -4,6 +4,8 @@ import React from "react";
 import Image1 from "../../assets/images/about-us/image1.png";
 import Image2 from "../../assets/images/about-us/image2.png";
 import Image3 from "../../assets/images/about-us/image3.png";
+import Relation1 from "../../assets/images/about-us/Relation1.svg";
+import Relation2 from "../../assets/images/about-us/Relation2.png";
 import "./AboutUs.css";
 
 const AboutUs = () => {
@@ -43,6 +45,17 @@ const AboutUs = () => {
                         <p>Nuestro enfoque integral se orienta no solo al desarrollo de modelos actuariales, sino a la identificación, mitigación y cobertura de riesgos asociados a la administración de beneficios a empleados.</p>
                         <img src={Image3} alt="Imagen de la empresa" />
                     </div>
+                </div>
+            </section>
+            <section className="relations-container">
+                <h1>Relaciones Comerciales</h1>
+                <div>
+                    <a href="https://www.connexus.mx/" target="_blank" rel="noreferrer">
+                        <img src={Relation1} alt="Imagen de la empresa" />
+                    </a>
+                    <a href="https://cidtes.org/" target="_blank" rel="noreferrer">
+                        <img src={Relation2} alt="Imagen de la empresa" />
+                    </a>
                 </div>
             </section>
         </section>

@@ -51,7 +51,33 @@
     justify-content: space-between;
 }
 
-.retirement-pension-plans .information-container .more-info p {
+.retirement-pension-plans .information-container .more-info li {
     width: 40%;
     font-size: 1.5rem;
+    list-style-type: disc;
+}
+
+@media screen and (max-width: 1024px) {
+    .retirement-pension-plans .banner {
+        height: 25vh;
+    }
+
+    .retirement-pension-plans .banner h1 {
+        font-size: 1.25rem;
+    }
+
+    .retirement-pension-plans .information-container .more-info {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem 0;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .retirement-pension-plans .information-container .more-info li {
+        width: 100%;
+        font-size: 1.25rem;
+        padding: 0 7%;
+        
+    }
 }

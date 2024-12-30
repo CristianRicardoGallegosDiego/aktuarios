@@ -44,7 +44,7 @@
     justify-content: center;
     align-items: center;
     gap: 10vh 0;
-    padding: 10vh 0;
+    padding: 10vh 0 0 0;
 }
 
 .nifd3-container .information-container .item-container-one {
@@ -97,4 +97,87 @@
 
 .nifd3-container .information-container .item-container-two div ul li strong {
     color: #DE443C;
+}
+
+.nifd3-container .nav-container {
+    width: 100%;
+    display: flex;
+    padding: 2rem 10% 10vh 10%; 
+}
+
+.nifd3-container .nav-container li {
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+}
+
+.nifd3-container .nav-container li a {
+    color: #0A1D90;
+    background-color: white;
+    border: 3px solid #0A1D90;
+    font-size: 2rem;
+    font-weight: 900;
+    border-radius: 2rem;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 60%;
+}
+
+.nifd3-container .nav-container li a:hover {
+    background-color: #0A1D90;
+    color: var(--white-1);
+}
+
+@media screen and (max-width: 1024px) {
+    .nifd3-container .banner {
+        height: 25vh;
+    }
+
+    .nifd3-container .banner h1 {
+        font-size: 2rem;
+    }
+
+    .nifd3-container .information-container {
+        padding: 2rem 7% 3rem 7%;
+        gap: 2rem 0;
+    }
+
+    .nifd3-container .information-container .item-container-one,
+    .nifd3-container .information-container .item-container-two {
+        flex-direction: column;
+        
+    }
+
+    .nifd3-container .information-container .item-container-one img,
+    .nifd3-container .information-container .item-container-two img {
+        max-width: 250px;
+        height: auto;
+    }
+
+    .nifd3-container .information-container .item-container-two {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nifd3-container .nav-container {
+        display: none;
+    }
+
+    .nifd3-container .information-container .item-container-one p,
+    .nifd3-container .information-container .item-container-two div {
+        padding-bottom: 2rem;
+        font-size: 1.25rem;
+    }
+
+    .nifd3-container .information-container .item-container-two div p {
+        font-size: 1.5rem;
+    }
+
+    .nifd3-container .information-container .item-container-two div ul li {
+        font-size: 1.25rem;
+    }
 }

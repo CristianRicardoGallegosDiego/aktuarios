@@ -15,17 +15,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0A1D90;
+    color: #0A1D90;
     font-size: 2rem;
     font-weight: 900;
-    color: var(--white-1);
+    background-color: var(--white-1);
+    border: 3px solid #0A1D90;
     border-radius: 2rem;
     padding: 0.5rem 0;
     transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
 }
 
 .links-container div a:hover {
-    background-color: #DE443C;
+    background-color: #0A1D90;
+    color: var(--white-1);
 }
 
 .links-container h3 {
@@ -33,4 +36,19 @@
     font-weight: 900;
     color: #DE443C;
     padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .links-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .links-container div a {
+        font-size: 1rem;
+    }
+
+    .links-container  {
+        padding: 0.5rem 5%;
+        padding-bottom: 2rem;
+    }
 }

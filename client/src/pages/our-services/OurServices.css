@@ -74,11 +74,39 @@
 }
 
 .our-services-container .links-container .my-link:hover {
-    background-color: #C6D8E3;
+    background-color: rgba(1, 71, 255, 0.2);
 }
 
 .our-services-container .links-container .my-link h2 {
     font-size: 3rem;
     font-weight: 900;
     color: #DE443C;
+}
+
+@media screen and (max-width: 1024px) {
+    .our-services-container .banner {
+        height: 25vh;
+    }
+
+    .our-services-container .banner h1 {
+        font-size: 2rem;
+    }
+    
+    .our-services-container .links-container .my-link img {
+        max-width: 120px;
+    }
+
+    .our-services-container .links-container .my-link h2 {
+        font-size: 1rem;
+    }
+
+    .our-services-container .links-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem 0;
+        padding: 2rem 0;
+        justify-content: center;
+        align-items: center;
+    }
 }

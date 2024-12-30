@@ -58,13 +58,13 @@ const MyMenu = () => {
                     </Accordion>
                 </DropdownItem>
                 <DropdownItem key="retirement_plans" className="p-0" onClick={handleClose}>
-                    <Link to="/servicios/planes-pensiones-por-jubilacion" className="menu-items-pc-laptop-header menu-items-pc-laptop-header-primary">Planes pensiones por jubilación</Link>
+                    <Link to="/servicios/valuacion-actuarial-y-revision-de-los-pasivos-laborales" className="menu-items-pc-laptop-header menu-items-pc-laptop-header-primary">Valuación actuarial</Link>
                 </DropdownItem>
                 <DropdownItem key="social_provision" className="p-0" onClick={handleClose}>
-                    <Link to="/servicios/prevision-social" className="menu-items-pc-laptop-header menu-items-pc-laptop-header-primary">Previsión social</Link>
+                    <Link to="/servicios/plan-de-retiro" className="menu-items-pc-laptop-header menu-items-pc-laptop-header-primary">Plan de retiro</Link>
                 </DropdownItem>
                 <DropdownItem key="retirement_advice" className="p-0" onClick={handleClose}>
-                    <Link to="/servicios/asesoria-para-el-retiro" className="menu-items-pc-laptop-header menu-items-pc-laptop-header-primary">Asesoría para el retiro</Link>
+                    <Link to="/servicios/otros-servicios" className="menu-items-pc-laptop-header menu-items-pc-laptop-header-primary">Otros servicios</Link>
                 </DropdownItem>
             </DropdownMenu>
         </Dropdown>

@@ -51,7 +51,31 @@
     justify-content: space-between;
 }
 
-.social-welfare-container .information-container .more-info p {
+.social-welfare-container .information-container .more-info li {
     width: 40%;
     font-size: 1.5rem;
+    list-style-type: disc;
+}
+
+@media screen and (max-width: 1024px) {
+    .social-welfare-container .banner {
+        height: 25vh;
+    }
+
+    .social-welfare-container .banner h1 {
+        font-size: 1.25rem;
+    }
+
+    .social-welfare-container .information-container .more-info {
+        flex-direction: column;
+        padding-top: 2rem;
+        gap: 1rem 0;
+        padding-bottom: 1rem;
+    }
+
+    .social-welfare-container .information-container .more-info li {
+        width: 100%;
+        padding: 0 7%;
+        font-size: 1.25rem;
+    }
 }

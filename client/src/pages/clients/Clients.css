@@ -153,3 +153,35 @@
 	font-size: 1.5rem;
 	padding: 0 5%;
 }
+
+@media screen and (max-width: 1024px) {
+	.clients-container .banner-container {
+		padding: 2rem 5%;
+	}
+
+	.clients-container .banner-container .first-item p {
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	.clients-container .banner-container .second-item {
+		flex-direction: column;
+	}
+
+	.clients-container .banner-container .second-item div {
+		width: 100%;
+		text-align: center;
+	}
+
+	.clients-container .banner-container .second-item .first {
+		font-size: 2rem;
+		text-align: center;
+		padding-bottom: 2rem;
+		padding-top: 1rem;
+	}
+
+	.clients-container .banner-container .second-item .second {
+		text-align: center;
+		font-weight: 700;
+	}
+}

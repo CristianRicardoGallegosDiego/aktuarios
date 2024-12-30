@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Image1 from "../../assets/images/nif-d3/circle1.png";
 import Image2 from "../../assets/images/nif-d3/circle2.png";
 import "./IAS.css";
@@ -27,6 +28,10 @@ const IAS = () => {
                     </div>
                 </div>
             </section>
+            <ul className="nav-container">
+                <li><Link to="/servicios/pasivos-contingentes-laborales/nif-d3">NIF D-3</Link></li>
+                <li><Link to="/servicios/pasivos-contingentes-laborales/usgaap">USGAAP</Link></li>
+            </ul>
         </section>
     );
 };

@@ -58,3 +58,75 @@
     max-width: 577px;
     font-size: 1.5rem;
 }
+
+.usgaap-container .nav-container {
+    width: 100%;
+    display: flex;
+    padding: 2rem 10% 10vh 10%; 
+}
+
+.usgaap-container .nav-container li {
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+}
+
+.usgaap-container .nav-container li a {
+    color: #0A1D90;
+    background-color: white;
+    border: 3px solid #0A1D90;
+    font-size: 2rem;
+    font-weight: 900;
+    border-radius: 2rem;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 60%;
+}
+
+.usgaap-container .nav-container li a:hover {
+    background-color: #0A1D90;
+    color: var(--white-1);
+}
+
+@media screen and (max-width: 1024px) {
+    .usgaap-container .banner {
+        height: 25vh;
+    }
+
+    .usgaap-container .banner h1 {
+        font-size: 2rem;
+    }
+
+    .usgaap-container .body-container {
+        padding: 2rem 7% 3rem 7%;
+    }
+
+    .usgaap-container .body-container div {
+        flex-direction: column;
+    }
+
+    .usgaap-container .body-container div p {
+        font-size: 1.25rem;
+    }
+
+    .usgaap-container .body-container div:nth-child(1) p {
+        padding-bottom: 1.5rem;
+    }
+
+    .usgaap-container .body-container div:nth-child(2) img {
+        order: 2;
+    }
+
+    .usgaap-container .body-container div:nth-child(2) p {
+        order: 1;
+        padding-bottom: 2rem;
+    }
+    
+    .usgaap-container .nav-container {
+        display: none;
+    }
+}

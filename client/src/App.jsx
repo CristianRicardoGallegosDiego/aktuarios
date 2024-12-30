@@ -15,9 +15,9 @@ import OurServices from "./pages/our-services/OurServices.jsx";
 import NifD3 from "./pages/nif-d3/NifD3.jsx";
 import Usgaap from "./pages/usgaap/Usgaap.jsx";
 import IAS from "./pages/ias/IAS.jsx";
-import RetirementPensionPlans from "./pages/retirement-pension-plans/RetirementPensionPlans.jsx";
-import SocialWelfare from "./pages/social-welfare/SocialWelfare.jsx";
-import RetirementCounseling from "./pages/retirement-counseling/RetirementCounseling.jsx";
+import ActuarialValuationAndReviewOfLaborLiabilities from "./pages/actuarial-valuation-and-review-of-labor-liabilities/ActuarialValuationAndReviewOfLaborLiabilities.jsx";
+import RetirementPlan from "./pages/retirement-plan/RetirementPlan.jsx";
+import OtherServices from "./pages/other-services/OtherServices.jsx";
 import Clients from "./pages/clients/Clients.jsx";
 import ContactUs from "./pages/contact-us/ContactUs.jsx";
 import NotFound from "./pages/not-found/NotFound.jsx";
@@ -38,9 +38,9 @@ const App = () => {
           <Route path="/servicios/pasivos-contingentes-laborales/nif-d3"    element={<NifD3 />} />
           <Route path="/servicios/pasivos-contingentes-laborales/usgaap"    element={<Usgaap />} />
           <Route path="/servicios/pasivos-contingentes-laborales/ias"       element={<IAS />} />
-          <Route path="/servicios/planes-pensiones-por-jubilacion"          element={<RetirementPensionPlans />} />
-          <Route path="/servicios/prevision-social"                         element={<SocialWelfare />} />
-          <Route path="/servicios/asesoria-para-el-retiro"                  element={<RetirementCounseling />} />
+          <Route path="/servicios/valuacion-actuarial-y-revision-de-los-pasivos-laborales"          element={<ActuarialValuationAndReviewOfLaborLiabilities />} />
+          <Route path="/servicios/plan-de-retiro"                         element={<RetirementPlan />} />
+          <Route path="/servicios/otros-servicios"                  element={<OtherServices />} />
           <Route path="/clientes"                                           element={<Clients />} />
           <Route path="/contactanos"                                        element={<ContactUs />} />
           <Route path="*"                                                   element={<NotFound />} />

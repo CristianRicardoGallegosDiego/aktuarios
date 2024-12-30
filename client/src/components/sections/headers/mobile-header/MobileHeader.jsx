@@ -53,13 +53,13 @@ const Services = ({ handleClose }) => {
                             <SubServices handleClose={handleClose}/>
                         </ListboxItem>
                         <ListboxItem key="retirement_pension_plans" color="primary" className="w-full text-primary p-0" onClick={handleClose}>
-                            <Link to="/servicios/planes-pensiones-por-jubilacion" className="w-full flex p-2 text-base">Planes pensiones por jubilación</Link>
+                            <Link to="/servicios/valuacion-actuarial-y-revision-de-los-pasivos-laborales" className="w-full flex p-2 text-base">Valuación actuarial</Link>
                         </ListboxItem>
                         <ListboxItem key="social_security" color="primary" className="w-full text-primary p-0" onClick={handleClose}>
-                            <Link to="/servicios/prevision-social" className="w-full flex p-2 text-base">Previsión social</Link>
+                            <Link to="/servicios/plan-de-retiro" className="w-full flex p-2 text-base">Plan de retiro</Link>
                         </ListboxItem>
                         <ListboxItem key="retirement_consulting" color="primary" className="w-full text-primary p-0" onClick={handleClose}>
-                            <Link to="/servicios/asesoria-para-el-retiro" className="w-full flex p-2 text-base">Asesoría para el retiro</Link>
+                            <Link to="/servicios/otros-servicios" className="w-full flex p-2 text-base">Otros servicios</Link>
                         </ListboxItem>
                     </Listbox>
                 </div>

@@ -141,3 +141,168 @@
     max-width: 450px;
     height: auto;
 }
+
+.about-us-container .relations-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    color: #9D0B07;
+    font-size: 5rem;
+    padding-bottom: 3rem;
+}
+
+.about-us-container .relations-container h1 {
+    padding-bottom: 1rem;
+}
+
+.about-us-container .relations-container div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 0 5rem;
+}
+
+.about-us-container .relations-container div a:nth-child(1) img {
+    height: 150px;
+    width: auto;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+.about-us-container .relations-container div a:nth-child(2) img {
+    height: 200px;
+    padding: 2rem 1rem;
+    width: auto;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+.about-us-container .relations-container div a img:hover {
+    background-color: rgba(1, 71, 255, 0.2);
+}
+
+@media screen and (max-width: 1024px) {
+    .about-us-container .banner-container {
+        flex-direction: column;
+    }
+
+    .about-us-container .experience-container h2 {
+        font-size: 2rem;
+        padding: 10vh 0;
+    }
+
+    .about-us-container .more-experience-container .second-container div {
+        flex-direction: column;
+    }
+
+    .about-us-container .more-experience-container .second-container div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-us-container .more-experience-container .second-container div:nth-child(2) p {
+        order: 2;
+    }
+
+    .about-us-container .more-experience-container .second-container div:nth-child(2) img {
+        order: 1;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .about-us-container .more-experience-container .first-container p,
+    .about-us-container .more-experience-container .second-container div p {
+        font-size: 1.25rem;
+    }
+
+    .about-us-container .more-experience-container {
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-bottom: 3rem;
+    }
+
+    .about-us-container .relations-container h1 {
+        font-size: 2rem;
+        padding: 0 5%;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .about-us-container .relations-container div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem 0;
+    }
+
+    .about-us-container .relations-container div a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us-container .relations-container div a:nth-child(1) img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .about-us-container .banner-container {
+        padding-top: 2rem;
+        width: 100%;
+    }
+
+    .about-us-container .banner-container section h2 {
+        font-size: 2rem;
+    }
+
+    .about-us-container .banner-container section div h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-us-container .banner-container section div p {
+        font-size: 1.25rem;
+    }
+
+    .about-us-container .banner-container section div:nth-child(3) {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .about-us-container .banner-container .image-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: auto;
+        margin-top: auto;
+        width: 100%;
+        padding-right: 3%;
+    }
+    
+    .about-us-container .banner-container .image-container img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .about-us-container .banner-container section div {
+        margin: 0 7%;
+    }
+
+    .about-us-container .banner-container section div h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-us-container .banner-container section div p {
+        font-size: 1.25rem;
+    }
+}

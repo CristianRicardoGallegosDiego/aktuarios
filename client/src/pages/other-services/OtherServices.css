@@ -1,0 +1,115 @@
+.retirement-counseling-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.retirement-counseling-container .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.retirement-counseling-container .banner h1 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #A62F2C;
+    padding: 0 5%;
+}
+
+.retirement-counseling-container .banner div {
+    width: 50%;
+    height: 100%;
+    background-image: 
+    linear-gradient(rgba(10, 29, 144, 0.60), rgba(10, 29, 144, 0.60)),
+    url('../../assets/images/our-services/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay; 
+}
+
+.retirement-counseling-container .information-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    max-width: 1080px;
+    padding-top: 3rem;
+}
+
+.retirement-counseling-container .information-container .points-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.retirement-counseling-container .information-container .points-container ul {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    font-size: 1.5rem;
+    gap: 1rem 0;
+}
+
+.retirement-counseling-container .information-container .points-container ul li {
+    list-style-type: disc;
+}
+
+.retirement-counseling-container .information-container .points-container .special-for-phones-container {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .retirement-counseling-container .banner {
+        height: 25vh;
+    }
+
+    .retirement-counseling-container .banner h1 {
+        font-size: 1.25rem;
+    }
+
+    .retirement-counseling-container .information-container .points-container {
+        flex-direction: column;
+        gap: 1rem 0;
+        padding-bottom: 1rem;
+    }
+
+    .retirement-counseling-container .information-container {
+        padding-top: 2rem;
+    }
+
+    .retirement-counseling-container .information-container .points-container ul {
+        width: 100%;
+        padding: 0 10%;
+        font-size: 1.25rem;
+    }
+
+    .retirement-counseling-container .information-container .points-container .special-for-phones-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+
+    .retirement-counseling-container .information-container .points-container .special-for-phones-container li {
+        list-style-type: none;
+    }
+
+    .retirement-counseling-container .information-container .points-container .special-for-phones-container li:nth-child(2) img {
+        width: 250px;
+    }
+
+    .retirement-counseling-container .information-container .points-container .special-for-phones-container li:nth-child(1) img {
+        width: 450px;
+    }
+}

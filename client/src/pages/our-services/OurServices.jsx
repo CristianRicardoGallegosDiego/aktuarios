@@ -13,15 +13,15 @@ const OurServices = () => {
                 <div></div>
             </div>
             <section className="links-container">
-                <Link to="" className="my-link right">
+                <Link to="/servicios/valuacion-actuarial-y-revision-de-los-pasivos-laborales" className="my-link right">
                     <img src={Image1} alt="Image1" />
                     <h2>Valuación Actuarial y revisión de los pasivos laborales</h2>
                 </Link>
-                <Link to="" className="my-link left">
+                <Link to="/servicios/plan-de-retiro" className="my-link left">
                     <h2>Plan de retiro</h2>
                     <img src={Image2} alt="Image2" />
                 </Link>
-                <Link to="" className="my-link right">
+                <Link to="/servicios/otros-servicios" className="my-link right">
                     <img src={Image3} alt="Image3" />
                     <h2>Otros servicios</h2>
                 </Link>

@@ -20,11 +20,11 @@ import {
 import { Button } from "@nextui-org/react";
 
 const ContactUsForm = () => {
-    /**const [fullName, setFullName] = useState("");
+    const [fullName, setFullName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [subject, setSubject] = useState("");
-    const [message, setMessage] = useState("");*/
+    const [message, setMessage] = useState("");
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -38,11 +38,11 @@ const ContactUsForm = () => {
         setIsOpen(false);
 
         const formData = {
-            fullname: "Tu nombre",
-            email: "tu_email@example.com",
-            phone_number: "1234567890",
-            subject: "Asunto del correo",
-            message: "Mensaje del correo",
+            fullname: fullName,
+            email: email,
+            phone_number: phone,
+            subject: subject,
+            message: message,
         };
 
         try {
@@ -50,6 +50,8 @@ const ContactUsForm = () => {
             alert(result.message);
         } catch (error) {
             alert(error.message);
+        } finally {
+            
         }
     };
     
@@ -75,6 +77,7 @@ const ContactUsForm = () => {
                     size="md"
                     color="default"
                     className="my-input"
+                    onChange={(e) => setFullName(e.target.value)}
                 />
                 <div className="email-and-phone">
                     <Input 
@@ -87,6 +90,7 @@ const ContactUsForm = () => {
                         size="md"
                         color="default"
                         className="my-input"
+                        onChange={(e) => setEmail(e.target.value)}
                     />
                     <Input 
                         id="phone"
@@ -98,6 +102,7 @@ const ContactUsForm = () => {
                         size="md"
                         color="default"
                         className="my-input"
+                        onChange={(e) => setPhone(e.target.value)}
                     />
                 </div>
                 <Input 
@@ -110,6 +115,7 @@ const ContactUsForm = () => {
                     size="md"
                     color="default"
                     className="my-input"
+                    onChange={(e) => setSubject(e.target.value)}
                 />
                 <Textarea
                     id="message"
@@ -122,6 +128,7 @@ const ContactUsForm = () => {
                     size="md"
                     color="default"
                     className="my-input"
+                    onChange={(e) => setMessage(e.target.value)}
                 />
                 <button onClick={handleOpen}>
                     <p>Enviar</p>
