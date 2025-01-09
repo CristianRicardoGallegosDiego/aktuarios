@@ -107,6 +107,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay; 
+    margin: -8px;
+    z-index: 1000;
 }
 
 .home-container .acknowledgments-container h2 {
@@ -117,6 +119,66 @@
     text-align: center;
     color: var(--white-1);
 }
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .home-container .mySwiper .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.home-container .mySwiper .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.home-container .mySwiper .image-container .cta-button {
+    position: absolute;
+    top: 10%; /* Ajusta esta posición según sea necesario */
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background-color: #DE443C; /* Color de fondo del botón */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-container .mySwiper .image-container .cta-button:hover {
+    background-color: rgba(10, 29, 144, 1); /* Color al pasar el cursor */
+}
+
 
 @media screen and (max-width: 1024px) {
     .home-container .banner-container {
@@ -181,5 +243,10 @@
     .home-container .more-info-container div:nth-child(2) img {
         padding-right: 10vw;
         transform: translateX(-120px);
+    }
+
+    .home-container .mySwiper .image-container .cta-button {
+        top: 15%; /* Ajusta esta posición según sea necesario */
+        left: 25%;
     }
 }

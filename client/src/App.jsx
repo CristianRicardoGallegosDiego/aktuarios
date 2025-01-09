@@ -24,6 +24,8 @@ import OtherServices from "./pages/other-services/OtherServices.jsx";
 import Clients from "./pages/clients/Clients.jsx";
 import ContactUs from "./pages/contact-us/ContactUs.jsx";
 import NotFound from "./pages/not-found/NotFound.jsx";
+import Webinar from "./pages/webinar/Webinar.jsx";
+import WebinarRegister from "./pages/webinar-register/WebinarRegister.jsx";
 import "./assets/fontawesome.js";
 import "./assets/styles/reset.css";
 import "./assets/styles/App.css";
@@ -37,7 +39,6 @@ const App = () => {
         vertical: "top",
         horizontal: "right",
       }}
-      
     >
       <NextUIProvider>
         <Router>
@@ -55,6 +56,8 @@ const App = () => {
             <Route path="/servicios/otros-servicios"                  element={<OtherServices />} />
             <Route path="/clientes"                                           element={<Clients />} />
             <Route path="/contactanos"                                        element={<ContactUs />} />
+            <Route path="/webinar"                                element={<Webinar />} />
+            <Route path="/webinar/registro"                        element={<WebinarRegister />} />
             <Route path="*"                                                   element={<NotFound />} />
           </Routes>
           <Footer />

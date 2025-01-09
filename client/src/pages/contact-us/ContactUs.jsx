@@ -49,6 +49,11 @@ const ContactUs = () => {
 
     const handleOpen = (e) => {
         e.preventDefault();
+        // Aqui debo de verficiar
+        if (fullName.replace(/\s+/g, '') === '' || email.replace(/\s+/g, '') === '' || phone.replace(/\s+/g, '') === '' || subject.replace(/\s+/g, '') === '' || message.replace(/\s+/g, '') === '') {
+            enqueueSnackbar("¡Error! Debes completar todos los campos.", { variant: "error" });
+            return;
+        }        
         setIsOpen(true);
     };
 
@@ -67,7 +72,7 @@ const ContactUs = () => {
 
         try {
             await sendEmail(formData);
-            enqueueSnackbar("¡Mensaje enviado con éxito :)!", { variant: "success" });
+            enqueueSnackbar("Mensaje enviado con éxito :)", { variant: "success" });
             setFullName("");
             setEmail("");
             setPhone("");
@@ -104,6 +109,7 @@ const ContactUs = () => {
                         color="default"
                         className="my-input"
                         onChange={(e) => setFullName(e.target.value)}
+                        value={fullName}
                     />
                     <div className="email-and-phone">
                         <Input 
@@ -117,6 +123,7 @@ const ContactUs = () => {
                             color="default"
                             className="my-input"
                             onChange={(e) => setEmail(e.target.value)}
+                            value={email}
                         />
                         <Input 
                             id="phone"
@@ -129,6 +136,7 @@ const ContactUs = () => {
                             color="default"
                             className="my-input"
                             onChange={(e) => setPhone(e.target.value)}
+                            value={phone}
                         />
                     </div>
                     <Input 
@@ -142,6 +150,7 @@ const ContactUs = () => {
                         color="default"
                         className="my-input"
                         onChange={(e) => setSubject(e.target.value)}
+                        value={subject}
                     />
                     <Textarea
                         id="message"
@@ -155,6 +164,7 @@ const ContactUs = () => {
                         color="default"
                         className="my-input"
                         onChange={(e) => setMessage(e.target.value)}
+                        value={message}
                     />
                     <button onClick={handleOpen}>
                         <p>Enviar</p>

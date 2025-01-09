@@ -11,8 +11,8 @@ const RetirementPlan = () => {
             </div>
             <section className="information-container">
                 <div className="more-info">
-                    <li>Valuación actuarial de pasivos laborales bajo NIF D-3, ASC 715, ASC 712 (principios contables norteamericanos) y IAS 19 (principios contables internacionales).</li>
-                    <li>Revisión de la razonabilidad de los pasivos laborales y el correcto apego de su reconocimiento bajo las distintas normas contables aplicables.</li>
+                    <li>El diseño, cálculo, proyecciones, comunicación y administración de planes de pensiones por jubilación que cubran el pasivo laboral que representa el envejecimiento de su personal considerando los distintos esquemas: Planes de beneficio definido, de contribución definida, o mixtos (planes híbridos).</li>
+                    <li>Actualización de su plan de pensiones y alineación de la estrategia de compensación a largo plazo con la estrategia del negocio y/o mercado.</li>
                 </div>
                 <LinksContainer />
             </section>

@@ -48,7 +48,7 @@ const AboutUs = () => {
                 </div>
             </section>
             <section className="relations-container">
-                <h1>Relaciones Comerciales</h1>
+                <h1>Socios Comerciales</h1>
                 <div>
                     <a href="https://www.connexus.mx/" target="_blank" rel="noreferrer">
                         <img src={Relation1} alt="Imagen de la empresa" />
