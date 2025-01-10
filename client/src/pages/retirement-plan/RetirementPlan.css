@@ -43,6 +43,7 @@
     width: 100%;
     flex-direction: column;
     max-width: 1080px;
+    padding-bottom: 7vh;
 }
 
 .social-welfare-container .information-container .more-info {
@@ -77,5 +78,9 @@
         width: 100%;
         padding: 0 7%;
         font-size: 1.25rem;
+    }
+
+    .social-welfare-container .information-container {
+        padding-bottom: 3vh;
     }
 }

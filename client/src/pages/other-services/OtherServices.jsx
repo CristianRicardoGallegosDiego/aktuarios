@@ -1,5 +1,5 @@
 import React from "react";
-import LinksContainer from "../../components/common/links-container/LinksContainer";
+//import LinksContainer from "../../components/common/links-container/LinksContainer";
 import "./OtherServices.css";
 import Image1 from "../../assets/images/other-services/circle1.png";
 import Image2 from "../../assets/images/other-services/image3.png";
@@ -28,7 +28,7 @@ const OtherServices = () => {
                         <li>Análisis de matrices de riesgos y controles asociados a procesos de nómina y beneficios a los empleados.</li>
                     </ul>
                 </div>
-                <LinksContainer />
+                
             </section>
         </section>
     );

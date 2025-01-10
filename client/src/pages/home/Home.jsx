@@ -32,12 +32,12 @@ const Home = () => {
             </section>
             <section className="more-info-container">
                 <div>
-                    <p><b>S</b>omos un grupo de actuarios que ofrecen <strong>soluciones</strong> por medio de <strong>lineamientos actuariales, financieros y contables</strong>, con la finalidad de que las empresas reconozcan sus pasivos contingentes y les permita tomar de manera oportuna las <strong>mejores decisiones organizacionales</strong>, lo cual se vea reflejado en la <strong>rentabilidad</strong> de la Compañía.</p>
+                    <p>Somos un grupo de actuarios que ofrecen <strong>soluciones</strong> por medio de <strong>lineamientos actuariales, financieros y contables</strong>, con la finalidad de que las empresas reconozcan sus pasivos contingentes y les permita tomar de manera oportuna las <strong>mejores decisiones organizacionales</strong>, lo cual se vea reflejado en la <strong>rentabilidad</strong> de la Compañía.</p>
                     <img src={Circle1} alt="Imagen de la empresa" />
                 </div>
                 <div>
                     <img src={Circle2} alt="Imagen de la empresa" />
-                    <p><b>E</b>stamos comprometidos a proporcionar una <strong>asesoría del más alto nivel de calidad</strong>, a través de un <strong>servicio personalizado</strong>, herramientas de comunicación y a través de un equipo de expertos con iniciativa, receptivo y con una <strong>amplia experiencia como Asesores y/o Auditores</strong>.</p>
+                    <p>Estamos comprometidos a proporcionar una <strong>asesoría del más alto nivel de calidad</strong>, a través de un <strong>servicio personalizado</strong>, herramientas de comunicación y a través de un equipo de expertos con iniciativa, receptivo y con una <strong>amplia experiencia como Asesores y/o Auditores</strong>.</p>
                 </div>
             </section>
             <Swiper
